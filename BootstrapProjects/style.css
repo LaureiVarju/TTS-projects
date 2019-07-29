@@ -1,0 +1,11 @@
+container {
+   background: steelblue;
+}
+h1 {
+  font: verdana;
+  font-display: green;
+}
+.img {
+   height: 80%;
+   width: 80%;
+}

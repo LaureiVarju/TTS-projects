@@ -7,3 +7,48 @@ Day 2
 All Present
 Not Cleaned
 --------------------
+Day 3 Topics
+All Present
+Not Cleaned
+-------------------
+Day 4
+(see written notes)
+Java script data type and how data conversion gets interpreted
+Variables (let and const not covered in this)
+Functions
+HTML Functions
+( JavaScript has built-in functions that let us modify HTML & CSS.)
+Conditionals (if, else, etc)
+Linking to jquery ( a library)
+iterations
+more specific examples.. not sure which to prioritize
+    statements:
+           (if, else, switch.) Looping/iteration/cycling related: (while, break, continue)
+
+Loose typing = allows a variable to be changed
+Coersion = JS automatically forcing a variable into something that makes sense.
+Explicit coersion = ie. taking a string off a databse from people's input and forcing it into a number.
+
+built in conversion functions:
+ParseInt <-- parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).
+parseFloat() <-- parses an argument and returns a floating point number.
+toString() <-- whatever to string
+
+Looping/Iterations
+
+
+
+-------------------
+Day 5 - more higher concepts, what is object orientation
+
+
+Day 6
+-------------------
+<section> and id tags
+"Hero" image -- banner image
+
+CSS terms:
+viewport 1vw = 1% of viewport width
+flex containers
+
+stacks:

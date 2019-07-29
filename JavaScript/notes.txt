@@ -1,0 +1,2 @@
+Object oriented programming style means data is coupled somehow, or has relationsips tied to it
+
