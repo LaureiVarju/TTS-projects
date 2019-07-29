@@ -34,9 +34,6 @@ ParseInt <-- parses a string argument and returns an integer of the specified ra
 parseFloat() <-- parses an argument and returns a floating point number.
 toString() <-- whatever to string
 
-Looping/Iterations
-
-
 
 -------------------
 Day 5 - more higher concepts, what is object orientation
@@ -52,3 +49,10 @@ viewport 1vw = 1% of viewport width
 flex containers
 
 stacks:
+
+git notes:
+I currently have a repository on github tracking my TTS Projects folder:
+
+navigate to my folder:
+C:\Users\User\Documents\TTS Projects
+

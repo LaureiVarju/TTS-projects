@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css)
+</head>
+
+<body>
+<h1> Template </h1>
+
+<script src ="javascript.js">
+
+// you can attach more JS scripts here
+
+</body>
+
+</html>
