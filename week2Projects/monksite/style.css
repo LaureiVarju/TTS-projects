@@ -1,10 +1,5 @@
 
- .header {
-  background-image: url('C:\Users\User\Documents\TTS Projects\week2Projects\monksite\logo_pom.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
+
 
 body {
 
@@ -26,7 +21,14 @@ body {
     color: #4f1e00;
 
   }
- 
+  .header {
+    background-image: url('Light & Void.jpg');
+    background-size: cover; 
+    background-position: top;
+    position: relative;
+  }
+
+
   /*--- navigation bar ---*/
   
   .navbar {
@@ -58,7 +60,7 @@ body {
   min-width: 100%;
   left: 0;
   top: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 
