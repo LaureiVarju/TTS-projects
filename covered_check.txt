@@ -75,6 +75,32 @@ git add -A to add all files in the root of the folder. That should stage them al
 
 then git commit? -m "message"?
 
+----------
+Day 7 Bootstrap topics
+Everything in bootstrap displays dynamically across different devices
 
+Bootstrap is best known for its grid system
+
+<tr> table row
+<td> cell of data
+
+It's a library of pre-made CSS classes with built in responsiveness across displays. Saves time.
+
+when linking locally, use:
+/bootstrap.min.css and jquery-3.3.1.min.js
+
+Containers and fluid containers:
+<header class="page-header header container-fluid">
+
+</header>
+
+The fluid part makes sure the container stretches across the entire width of the screen. There’s also just container, which has fixed widths applied to it, so there will always be space on both sides of the screen
+
+
+
+
+----------
+read to page 20 in oracle cert book
+Java codeacademy
 
 

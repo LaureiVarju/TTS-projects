@@ -1,57 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-    <link rel="stylesheet" href="style.css" )>
-
-    <!-- I'm purposefully not linking bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-
+  MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" )>
 
 </head>
 
 <body>
-    <h1> MNK Template </h1>
 
-    <script src="javascript.js"> </script>
-
-
-    <!--you can attach more JS scripts here
- <script src ="Another.js">-->
+   
 
 
-<!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    <div class="overlay"></div> <!-- the opacity overlay over the site-->
+    <div class="description">
+        <h1>Welcome to the Landing Page!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.</p>
+        <button class="btn btn-lg btn-primary">Go on, click me.</button>
+      </div>
+  <header 
+  class="page-header header container-fluid">  <!-- This fluid container makes this site dynamic and responsive across displays -->
+  </header>
 
-<!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" 
-class="close" title="Close Modal">&times;</span>
-
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="M.png" alt="Avatar" class="avatar">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <a class="nav-link" href="#">Illustrations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Promotional</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Photo-Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Educational</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+ <!-- Navigation Bar -->
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+<!-- Bootstrap CDN JS link-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script> 
 
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+  <script src="javascript.js">
+  </script>                             
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
+  <!-- Local JS file overwrites any same-referenced elements from Boot because of order in this code. 
+  These <script> tags should always be the last things before the end of the body-->
 
 </body>
 
