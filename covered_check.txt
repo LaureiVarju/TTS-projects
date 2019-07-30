@@ -33,12 +33,15 @@ built in conversion functions:
 ParseInt <-- parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).
 parseFloat() <-- parses an argument and returns a floating point number.
 toString() <-- whatever to string
-
-
 -------------------
 Day 5 - more higher concepts, what is object orientation
 
+OOP languages
+"oo" "A "PIE" (object oriented - Abstraction, Polymorphism, Inheritance, Encapsulation)
 
+ JIRA
+
+---------------------
 Day 6
 -------------------
 <section> and id tags
@@ -48,11 +51,30 @@ CSS terms:
 viewport 1vw = 1% of viewport width
 flex containers
 
-stacks:
+stacks: pre-installed software on a server to make management simpler( isolated to servers? unsure.
+
+Most common stack is a LAMP
+Linuix, Apache, MySQL, PHP
+Linuix - server OS 
+Apache - software that sorts and filters file requests, sometimes NGINX is used (faster)
+MySQL - database
+PHP - server-side programming language 
+****
 
 git notes:
 I currently have a repository on github tracking my TTS Projects folder:
 
 navigate to my folder:
 C:\Users\User\Documents\TTS Projects
+
+Have to use "" around TTS Projects because of the space.
+
+git status
+
+git add -A to add all files in the root of the folder. That should stage them all
+
+then git commit? -m "message"?
+
+
+
 
