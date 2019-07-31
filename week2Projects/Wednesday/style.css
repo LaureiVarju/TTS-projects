@@ -1,0 +1,21 @@
+#start {
+    background-color: #ccc;
+    padding: 20px
+}
+
+.init {
+    color: red;
+    font-weight: bold;
+}
+
+h2 {
+    color: red;
+}
+
+.otherClass {
+    color: red;
+}
+
+.andAnotherClass {
+    color: red;
+}
