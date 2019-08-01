@@ -1,0 +1,84 @@
+
+body {
+
+   /*--- gradient background ---*/
+
+
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(98,189,182,1) 96%, rgba(0,176,180,1) 100%) fixed;  
+    /* the 'fixed' attribute in the line above makes this full screen */ 
+
+   /*---------------------------*/
+
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  }
+
+  h1 {
+    color: #4f1e00;
+
+  }
+  .header {
+    background-image: url('Light & Void.jpg');
+    background-size: cover; 
+    background-position: top;
+    position: relative;
+  }
+
+
+  /*--- navigation bar ---*/
+  
+  .navbar {
+    background: rgba(0, 0, 0);
+  }
+  
+.navlogo{
+  background: rgb(255, 0, 0);
+
+}
+
+  .nav-link,
+  .navbar-brand {
+    color: white;
+    background: rgb(255, 0, 0);
+    text-emphasis: emphasis;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .nav-link {
+    margin-right: 1em !important;
+    text-emphasis: emphasis;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  }
+  
+  .nav-link:hover {
+    color: #000;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-left;
+  }
+ 
+/*----- Search Bar Button and Icon ------*/
+  .button-holder{
+    background-color:#f1f1f1;
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    cursor:pointer;
+    float:left;
+    height:27px;
+    margin:11px 0 0 0;
+    text-align:center;
+    width:50px;
+}
+  
+#button-holder-img{
+    margin:4px;
+    width:20px;
+}

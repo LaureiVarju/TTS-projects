@@ -61,21 +61,7 @@ MySQL - database
 PHP - server-side programming language 
 ****
 
-git notes:
-I currently have a repository on github tracking my TTS Projects folder:
-
-navigate to my folder:
-C:\Users\User\Documents\TTS Projects
-
-Have to use "" around TTS Projects because of the space.
-
-git status
-
-git add -A to add all files in the root of the folder. That should stage them all
-
-then git commit? -m "message"?
-
-----------
+-----------------------------------------
 Day 7 Bootstrap topics
 Everything in bootstrap displays dynamically across different devices
 
@@ -104,4 +90,9 @@ read to page 20 in oracle cert book
 Java codeacademy
 ----
 
+
+Spring, Hibernate and their relationship to Java
+
+
+Restful JSON
 
