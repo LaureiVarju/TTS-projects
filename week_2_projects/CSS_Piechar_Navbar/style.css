@@ -1,0 +1,209 @@
+/*------ Navigation Bar START */
+
+.navBarOuterContainer {
+  background: rgba(0, 0, 0);
+  margin-top: -10px;
+  display: flex;
+  width: 100vw;
+}
+#navBarLogoContainer {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7%;
+  background: rgb(255, 0, 0);
+  text-emphasis: emphasis;
+  cursor: pointer;
+  font-size: 35px;
+  font-family: "Arial", "sans-serif";
+  margin-left: -10px;
+}
+
+.navLinksAll {
+  color: white;
+  margin-right: 1em !important;
+  text-emphasis: emphasis;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", "Arial", "sans-serif";
+}
+
+#navLinksLeft {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLinksRight {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.navbar-collapse {
+  justify-content: flex-left;
+}
+
+/*------- Navigation Bar END -------*/
+
+#cartImgContainer {
+  width: 20px;
+  height: 15px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+/*----- Search Bar Button and Icon START------*/
+.searchBarContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  max-width: 300px;
+}
+
+.searchbarImgContainer {
+  height: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#button-holder-img {
+  background-color: #ff0000;
+  cursor: pointer;
+  width: 18%;
+}
+/*----- Search Bar Button and Icon END------*/
+
+/*--------- Circle Table Flex START ---------*/
+
+.grid2x2OuterContainer {
+  display: flex;
+  justify-content: center;
+}
+.grid2x2 {
+  display: flex;
+  height: 50vw;
+  width: 55vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.grid2x2 > div {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.box {
+  margin: 2px;
+}
+.box1 {
+  border-top-left-radius: 100%;
+  background-color: red;
+}
+.box2 {
+  border-top-right-radius: 100%;
+  background-color: yellow;
+}
+.box3 {
+  border-bottom-left-radius: 100%;
+  background-color: blue;
+}
+.box4 {
+  border-bottom-right-radius: 100%;
+  background-color: green;
+}
+
+/*--------- Circle Table Flex END ---------*/
+
+/*-------- Gradient background START --------*/
+body {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 60%,
+      rgba(98, 189, 182, 1) 96%,
+      rgba(0, 176, 180, 1) 100%
+    )
+    fixed;
+  /* the 'fixed' attribute in the line above makes this full screen */
+
+  color: white;
+}
+
+/*-------- Gradient background END --------*/
+
+/*-----------------Inactive Code ---------------- */
+
+/*------ Static circle -------/
+  #main-container{
+
+    width:980px;
+    height:700px;
+    margin:0 auto;
+    position:relative;
+    top:20px;
+}
+
+.box {
+  margin: 2px;
+    position: absolute;
+    width:100px;
+    height:100px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+}
+
+#topleft{
+   border-top-left-radius: 100%; background-color: red; 
+    margin:0 auto;
+    top:50%;
+    left:50%;
+    margin-top:-110px;
+    margin-left:-110px;
+}
+#topright{
+   border-top-right-radius: 100%; background-color: yellow;
+    margin:0 auto;
+    top:50%;
+    left:50%;
+    margin-top:-110px;
+    margin-left:10px;
+}
+#bottomleft{
+  border-bottom-left-radius:100%; background-color: blue;
+    margin:0 auto;
+    top:50%;
+    left:50%;
+    margin-top:10px;
+    margin-left:-110px;
+}
+#bottomright{
+  border-bottom-right-radius:100%; background-color: green;
+    margin:0 auto;
+    top:50%;
+    left:50%;
+    margin-top:10px;
+    margin-left:10px;
+}
+/*------ Static Circle END -------*/
