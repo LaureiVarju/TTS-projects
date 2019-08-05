@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <link rel="stylesheet" type:"text/css" href="style.css">
+</head>
+
+<title> CSS Exercises: Shapes, Grids, and Navbar</title>
+
+<body>
+
+    <!--Navigation Hamburger Button START -->
+    <!-- <div class="navbar navbar-expand-sm container">
+        <div class="container left_container"><a class="navbar-brand" href="#">Logo</a> </div>
+
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+
+         <div class="collapse navbar-collapse" id="main-navigation"> -->
+            <!---Navigation Hamburger Button END -->
+<div class="navBarOuterContainer">
+        <div id="navBarLogoContainer"><a id="navBarLogoContainer" href="#">Logo</a> 
+            <!-- I had to apply the id to te <a> tag to get this to override the default HTML display (blue, underlined)-->
+        </div>
+                    <ul id="navLinksLeft">
+                        <a class="navLinksAll" href="#">PRODUCTS</a> 
+                        <a class="navLinksAll" href="#">MUSIC</a>
+                        <a class="navLinksAll" href="#">PLAY</a>
+                        <a class="navLinksAll" href="#">CONNECT</a>
+                     </ul>
+
+                    <!------------Search Bar Start------------->
+                    <form class="searchBarContainer">
+                        <input type="text" name="search2"> </i>
+                        <div class="searchbarImgContainer"><img src="Search-icon.png" type="submit" id=button-holder-img href="#">
+                        </div>
+                    </form>
+            
+                <!------------Search Bar End-------------->
+
+                <!------------Right Side Links BEGIN-------------->
+                <ul><div class="navLinksRight">
+                    <div><a class="navLinksAll" href="#">SIGN IN /</a> 
+                    <a class="navLinksAll" href="#">DEALER LOCATER </a> </div>
+                   <div> <a class="navLinksAll" href="#">VIEW CART </a>
+                    <img id=cartImgContainer src="shop_cart.png" href="#"> 
+                    </div>
+            </li>
+        </ul>
+                <!------------Right Side Links END-------------->
+
+    </div>
+</div>
+    <!-------------- Navigation Bar END-------------->
+    <!-- <br>
+    <br>
+    <img src=https://files.slack.com/files-pri/TJ53BQZT6-FLMMWKZ7D/masthead.png> -->
+
+    <!-------------- HTML Table Test-------------->
+   <div class="grid2x2OuterContainer"> 
+       <div class="grid2x2">
+        <div class="box box1">
+            <div>Red</div>
+        </div>
+        <div class="box box2">
+            <div>Yellow</div>
+        </div>
+        <div class="box box3">
+            <div>Blue</div>
+        </div>
+        <div class="box box4">
+            <div>Green</div>
+        </div>
+    </div>
+    </div>
+    <!-------------- HTML Table Test END-------------->
+
+
+    <!-------------- Bootstrap, Popper, JQuery, and local JS-------------->
+
+    <!---Do we need Popper and our local JS?-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="javascript.js">
+    </script>
+    <!-------------- Bootstrap, Popper, JQuery, and local JS END-------------->
+</body>
+
+</html>
+
+
+<!--------------Inactive Code-->
+
+<!-- Static table
+    <div id='main-container'>
+            <div class='box' id='topleft'></div>
+            <div class='box' id='topright'></div>
+            <div class='box' id='bottomleft'></div>
+            <div class='box' id='bottomright'></div>
+           
+           </div>
+           ->
