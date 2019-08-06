@@ -1,4 +1,4 @@
-console.log("Top of js");
+console.log("Top of js"); //This is to check if I linked my file correctly to the HTML :) 
 
 var orderSequence = prompt(
   "Write the sequence number of the fibonacchi value you would like to view."
