@@ -26,7 +26,10 @@ If the number is less than 40 print the string "Small Number". ((CHECK))
 If the number is in between 40 and 70, or equal to 40 or 70, print the string "Medium Number". ((CHECK))
 
 Write the same tests as above but using an if-else statement. Which is more efficient? Easier to
-code? Easier to read? Easier to maintain?
+code? Easier to read? Easier to maintain? ((Haven't checked))
+
+
+
 Could the above if statement be written with an equivalent switch statement? (Short answer -
 yes.) What would be the answers to more efficient? Easier to code? Easier to read? Easier to
 maintain?
@@ -34,10 +37,6 @@ maintain?
 */
 
 //beginning of my code
-
-//This function creates a number between 1-100 and evaluates it as big (>70), small (<40),
-// or medium (>= 40, and <= 70) Sometimes, however, I'm getting multiple returns to the console, a number will
-// qualify for 2 categories (small and medium, for example) Why?
 
 function myFunction() {
   randomNum = Math.floor(Math.random() * 101);
@@ -51,7 +50,7 @@ function myFunction() {
     console.log("Small Number");
   }
 
-  if (40 <= randomNum <= 70) {
+  if (40 <= randomNum && randomNum <= 70) {
     console.log("Medium Number");
   }
 }

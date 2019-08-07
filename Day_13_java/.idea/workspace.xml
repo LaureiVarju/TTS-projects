@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/BS_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Coffee.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Console.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Console.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/DayWeek.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/DayWeek.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/JS_Test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/JS_TestGrounds.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Madlib.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Madlib.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Mon_exercise.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Mon_exercise.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Mon_exercise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Mon_exercise.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Nav_bar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/SB.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/Template_HTML.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/coffee.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/console_test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/console_test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/conversion.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/gitcat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/height_to_centimeters.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/imperial_to_metric_height.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/Misc Small Exercises/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/jQuery Project/Bart_Simpson_200px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/jQuery Project/Homer_Simpson_2006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/jQuery Project/gitcat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/jQuery Project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/jQuery Project/index.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/jQuery Project/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_1_projects/jQuery Project/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_3_projects/Arrays/array_notes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_3_projects/Arrays/array_notes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_3_projects/Arrays/grocery_array_exercise.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_3_projects/Arrays/grocery_array_exercise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_3_projects/Objects and Functions Javascript/javascript_objects_functions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../week_3_projects/Objects and Functions Javascript/javascript_objects_functions.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week_1_projects/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week_3_projects/Java Control Flow Exercises/control_flow_LAB.js" beforeDir="false" afterPath="$PROJECT_DIR$/../week_3_projects/Java Control Flow Exercises/control_flow_LAB.js" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -165,16 +127,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="OverrideImplement.combined" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
