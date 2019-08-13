@@ -1,0 +1,27 @@
+/* Not currently in use */
+#nav1 {
+  background-color: rgb(0, 0, 0) 0.3; /*whichever you want*/
+}
+
+/* BG color set to 0 opacity at the moment */
+#mainwrapper {
+  background-color: rgba(3, 0, 64, 0);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-color: rgba(0, 176, 180, 0.8);
+}
+
+#section {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+body {
+  background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 70%,
+      rgb(159, 255, 247) 96%,
+      rgba(0, 176, 180, 1) 100%
+    )
+    fixed;
+  /* the 'fixed' attribute in the line above makes this full screen */
+}

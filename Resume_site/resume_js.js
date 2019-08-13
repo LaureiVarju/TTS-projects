@@ -1,11 +1,12 @@
 /* chart.js chart examples */
 console.log("Top of JS");
+
 // chart colors
 var colors = ["#007bff", "#28a745", "#333333", "#c3e6cb", "#dc3545", "#6c757d"];
 
 /* 3 donut charts */
 var donutOptions = {
-  cutoutPercentage: 58,
+  cutoutPercentage: 62,
   legend: {
     position: "bottom",
     padding: 5,
@@ -21,13 +22,10 @@ var chDonutData1 = {
     {
       backgroundColor: ["#ff5f90", "#ffcc00", "#34eb77", "#00ddff", "#d445ff"],
       borderWidth: 0,
-      data: [15, 9, 30, 40, 8]
+      data: [15, 8, 30, 40, 7]
     }
   ]
 };
-
-// PS (40)  JS (30) HTML (15) Illus (8) CSS (7)
-//(85)
 
 var chDonut1 = document.getElementById("chDonut1");
 if (chDonut1) {
@@ -40,12 +38,12 @@ if (chDonut1) {
 
 // donut 2
 var chDonutData2 = {
-  labels: ["Java", "Python", "SQL"],
+  labels: ["Java", "Python", "SQL", "node", "PHP"],
   datasets: [
     {
-      backgroundColor: ["#5b0094", "#ff8400", "#0f9600"],
+      backgroundColor: ["#5b0094", "#4059ff", "#0f9600", "#c90f02", "#ff8400"],
       borderWidth: 0,
-      data: [85, 5, 10]
+      data: [20, 20, 20, 20, 20]
     }
   ]
 };
@@ -60,10 +58,10 @@ if (chDonut2) {
 
 // donut 3
 var chDonutData3 = {
-  labels: ["Angular", "React", "Other"],
+  labels: ["Angular", "Bootstrap", "JQuery", "Popper"],
   datasets: [
     {
-      backgroundColor: colors.slice(0, 3),
+      backgroundColor: colors.slice(0, 4),
       borderWidth: 0,
       data: [21, 45, 55, 33]
     }
