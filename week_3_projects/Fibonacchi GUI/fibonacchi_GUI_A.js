@@ -1,12 +1,7 @@
-console.log("Top of js"); //This is to check if I linked my file correctly to the HTML :)
+//This is to check if I linked my file correctly to the HTML :)
+console.log("JS File successfully linked");
 
-/* var orderSequence = prompt(
-  "Write the sequence number of the fibonacchi value you would like to view."
-); */
-
-// This ^ makes sure that the input value is being interpreted as a number for later calculations
-
-var s;
+var se;
 
 //s is the array we're generating. We're declaring it here as a variable to refer to and call later
 

@@ -1,0 +1,62 @@
+body {
+  background: grey;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+}
+#navbar {
+  /*make it sticky*/
+  position: fixed;
+  top: 0;
+  background: black;
+  width: 100%;
+  /*If theres too much options, make it scrollable horizontally*/
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+/*Make the scrollbar bearable to watch*/
+#navbar::-webkit-scrollbar {
+  height: 7px;
+  width: 7px;
+}
+#navbar::-webkit-scrollbar-track {
+  background: black;
+}
+#navbar::-webkit-scrollbar-thumb {
+  background: #555;
+}
+#navbar::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+  width: 60px;
+  height: 60px;
+}
+#logo * {
+  position: relative;
+  top: 13px;
+  left: 13px;
+}
+#button_wrapper {
+  margin-left: 70px;
+  height: 60px;
+  float: left;
+}
+#button {
+  display: inline-block;
+  height: 55px;
+  margin: 0 5px;
+  line-height: 60px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#content {
+  margin-top: 60px;
+}
