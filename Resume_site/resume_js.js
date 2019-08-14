@@ -43,7 +43,7 @@ var chDonutData2 = {
     {
       backgroundColor: ["#5b0094", "#4059ff", "#0f9600", "#c90f02", "#ff8400"],
       borderWidth: 0,
-      data: [20, 20, 20, 20, 20]
+      data: [70, 11, 19, 6, 4]
     }
   ]
 };
@@ -63,7 +63,7 @@ var chDonutData3 = {
     {
       backgroundColor: colors.slice(0, 4),
       borderWidth: 0,
-      data: [21, 45, 55, 33]
+      data: [41, 45, 55, 13]
     }
   ]
 };
