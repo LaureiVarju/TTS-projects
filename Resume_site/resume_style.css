@@ -17,6 +17,12 @@
   justify-content: space-around;
 }
 
+.imgbutton {
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
 #section {
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -25,7 +31,7 @@ body {
       to left,
       rgba(255, 255, 255, 1) 0%,
       rgba(255, 255, 255, 1) 70%,
-      rgb(159, 255, 247) 96%,
+      rgb(159, 255, 247) 80%,
       rgba(0, 176, 180, 1) 100%
     )
     fixed;

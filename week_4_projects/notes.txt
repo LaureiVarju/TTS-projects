@@ -1,0 +1,15 @@
+interface EmployeeOptions{
+
+firstName:
+lastName:
+favColor: (optional)
+title: (optional)
+
+
+
+
+
+test on Tues on front end
+
+
+
