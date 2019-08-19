@@ -1,11 +1,3 @@
-interface EmployeeOptions{
-
-firstName:
-lastName:
-favColor: (optional)
-title: (optional)
-
-
 
 
 

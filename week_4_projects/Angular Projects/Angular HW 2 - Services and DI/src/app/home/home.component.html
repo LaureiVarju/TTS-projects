@@ -1,0 +1,20 @@
+<h1>
+  Welcome to the Home Component
+</h1>
+<br />
+<p>
+  The values below (names/images) are being called from a public testing API
+  array.
+</p>
+<br />
+<p>
+  There are only 3 values in this array:
+  <br /><a href="https://reqres.in/api/users"> https://reqres.in/api/users </a>
+</p>
+
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar" />
+    <p>{{ user.first_name }} {{ user.last_name }}</p>
+  </li>
+</ul>

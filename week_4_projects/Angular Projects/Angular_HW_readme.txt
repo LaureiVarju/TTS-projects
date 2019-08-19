@@ -1,10 +1,10 @@
 Name: Michelle Dilzell
 Github user id: LaureiVarju
-Assignment Title: Angular Basics - Lab and Homework
-Assigned: 8/14/19 (Day 18 Bootcamp - Week 4)
+Assignment Title: Angular Basics Homework
+Assigned: 8/14/19 (Day 19 Bootcamp - Week 4)
 
 Link to the assignment in github: 
-(https://github.com/LaureiVarju/TTS-projects/blob/master/week_4_projects/Angular%20Projects/angularHW.zip)
+https://github.com/LaureiVarju/TTS-projects/blob/master/week_4_projects/Angular%20Projects/angularHW.zip
 
 Homework Status:
 
