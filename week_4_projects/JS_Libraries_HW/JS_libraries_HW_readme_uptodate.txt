@@ -6,6 +6,8 @@ Assigned: 8/12/19 (Day 16 Bootcamp - Week 4)
 Link to the assignment in github: 
 ******************
 
+NOTE TO SELF: 
+some of my cdns may be "cores" and totally screw up the assignment. check your library names
 Homework Status:
 
 LODASH LIBRARY SECTION

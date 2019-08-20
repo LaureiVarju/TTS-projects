@@ -1,0 +1,29 @@
+.border-blue {
+  border: 3px solid blue;
+}
+.border-red {
+  border: 3px solid red;
+}
+
+.x {
+  display: flex;
+  justify-content: center;
+  background: red;
+}
+
+.o {
+  display: flex;
+  justify-content: center;
+  background: grey;
+}
+
+.xcontain {
+  width: 300px;
+  margin: auto;
+  border: 3px solid #73ad21;
+}
+
+.formcontain {
+  width: 500px;
+  margin: auto;
+}

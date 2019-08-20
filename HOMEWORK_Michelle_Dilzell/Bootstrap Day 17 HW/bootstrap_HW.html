@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS CDN and local CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,27 +16,34 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="bootstrap_HW.css" />
+
+    <title>Bootstrap and JQuery Homework</title>
   </head>
   <body>
-    <!-- <h1>Hello, world!</h1>
+    <p><h4>Homework Assignment: Bootstrap and JQuery</h4><br>
+      by Michelle Dilzell <br>
+      Below are examples of Bootstrap, JQuery, and Lodash functionality</p>
     <div class="jumbotron">
       <div class="container">
-        your message
+        <h2>Example 1.</h2> This is an example of a jumbotron and container class.<br />
+        It's also the first section of this homework assignment :)
       </div>
     </div>
 
     <div class="alert alert-primary" role="alert">
-      A simple primary alert—check it out!
-    </div>
+        <h2>Example 2.</h2> This is an example of an alert
+    </div><br>
     <div>
-      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <h2>Example 3.</h2> These are examples of buttons.
+      <button type="button" class="btn btn-primary btn-lg">We change colors!</button>
       <button type="button" class="btn btn-warning btn-lg">
-        Large button
+       Click Us!
       </button>
-    </div>
+    </div><br>
 
     <div class="card">
+        <h2>Example 4.</h2> This is an example of a card that happens to feature a 'blockquote' class as well
       <div class="card-header">
         Quote
       </div>
@@ -51,9 +58,10 @@
           </footer>
         </blockquote>
       </div>
-    </div>
+    </div><br>
 
     <div class="accordion" id="accordionExample">
+        <h2>Example 5.</h2> This is an example of a collapsible class, or 'accordian'
       <div class="card">
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
@@ -71,7 +79,7 @@
         </div>
 
         <div
-          id="collapseOne"
+                  id="collapseOne"
           class="collapse show"
           aria-labelledby="headingOne"
           data-parent="#accordionExample"
@@ -160,10 +168,11 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Example single danger button -->
+    </div><br>
+
+    <h2>Example 6.</h2> This is an example of a drop down menu.
     <div class="btn-group">
-      <button
+           <button
         type="button"
         class="btn btn-danger dropdown-toggle"
         data-toggle="dropdown"
@@ -179,22 +188,304 @@
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#">Separated link</a>
       </div>
-    </div>
-    -->
+    </div><br><br>
+
+    <h2>Example 7.</h2> Here are some examples of divs with different background colors.<br>
+    bg- and text- are used here to make some custom alert-like sections
+<div class="bg-danger text-white">
+  Message Area 1: My background color is red!
+</div>
+<div class="bg-warning text-white">
+    Message Area 2: My background color is yellow!
+  </div>
+  <div class="bg-info text-white">
+      Message Area 2: My background color is blue!
+    </div><br><br>
+
+    <h2>Example 8.</h2> Here are some examples of paragraphs with different text colors.
+    <P class="text-danger"> I'm a paragraph with red text </P>
+    <P class="text-success"> I'm a paragraph with green text </P>
+    <P class="text-info"> I'm a paragraph with blue text </P><br>
+
+    <h2>Example 9.</h2> This is an example of CSS border effects on a table created with div tags
     <div class="container">
+     
       <div class="row">
-        <div class="col">
+        <div class="col border-red">
           My column data
         </div>
-        <div class="col">
+           <div class="col  border-blue">
           My column data
         </div>
-        <div class="col">
+        <div class="col  border-red">
           My column data
         </div>
       </div>
+
+      <div class="row">
+        <div class="col  border-blue">
+          My column data
+            </div>
+            <div class="col  border-red">
+              My column data
+            </div>
+            <div class="col  border-blue">
+              My column data
+            </div>
+      </div>
+
+      <div class="row">
+        <div class="col border-red">
+          This row only has 2 columns
+        </div>
+           <div class="col  border-blue">
+            This row only has 2 columns
+        </div>
+             </div>
+
+             <div class="row">
+              <div class="col  border-blue">
+               This row has 4 columns
+                  </div>
+                  <div class="col  border-red">
+                    This row has 4 columns
+                  </div>
+                  <div class="col  border-blue">
+                    This row has 4 columns
+                  </div>
+                  <div class="col  border-red">
+                    This row has 4 columns
+                  </div>
+            </div>
+      
+    </div>
+    <br>
+    <br>
+    <h2>Example 10.</h2> This is the same table with absolute column sizing ('col-3', 'col-4' )etc.
+    <p>If the the sum of the column classes on a given row exceed 12, then the last div in that row will create its own row 
+      and leave a space behind: <em><h6>(This has happened purposefully on row 3)</h6> </em></p>
+      <p> if the sum of the column classes on a given row is less than 12, then a gap will appear on the row:</p>
+      <em><h6>(This has happened purposefully on the final row)</h6> </em></p>
+    <div class="container">
+     
+      <div class="row">
+        <div class="col-4 border-red">
+          My column data
+        </div>
+           <div class="col-4  border-blue">
+          My column data
+        </div>
+        <div class="col-4 border-red">
+          My column data
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4  border-blue">
+          My column data
+            </div>
+            <div class="col-4  border-red">
+              My column data
+            </div>
+            <div class="col-4  border-blue">
+              My column data
+            </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-6 border-red">
+          This row only has 2 columns. This div is set to col-6
+        </div>
+           <div class="col-10 border-blue">
+            This row only has 2 columns. This div is set to col-10...too much!
+        </div>
+             </div>
+
+             <div class="row">
+              <div class="col-3  border-blue">
+               This row has 4 columns, and this div is set to col-3
+              </div>
+                  <div class="col-3  border-red">
+                    This row has 4 columns, and this div is set to col-3
+                    </div>
+                  <div class="col-3  border-blue">
+                    This row has 4 columns, and this div is set to col-3
+                  </div>
+                  <div class="col-1  border-red">
+                      This row has 4 columns, and this div is set to col-1...too small!
+                  </div>
+            </div>
+      
     </div>
 
+    <h2>Example 11.</h2> This is a table with adaptive sizing (col-md, col-sm, etc.) <em><h6>Rows 1 and 3 have adaptive sizing (col-md)</h6></em>
+    <p>These adaptive rows stack when the browser window is smaller</p>
+    <div class="container">
+             <div class="row">
+          <div class="col-md border-red">
+            My column data
+          </div>
+             <div class="col-md   border-blue">
+            My column data
+          </div>
+          <div class="col-md   border-red">
+            My column data
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col  border-blue">
+            My column data
+              </div>
+              <div class="col  border-red">
+                My column data
+              </div>
+              <div class="col  border-blue">
+                My column data
+              </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md  border-red">
+            This row only has 2 columns
+          </div>
+             <div class="col-md   border-blue">
+              This row only has 2 columns
+          </div>
+               </div>
+  
+               <div class="row">
+                <div class="col  border-blue">
+                 This row has 4 columns
+                    </div>
+                    <div class="col  border-red">
+                      This row has 4 columns
+                    </div>
+                    <div class="col  border-blue">
+                      This row has 4 columns
+                    </div>
+                    <div class="col  border-red">
+                      This row has 4 columns
+                    </div>
+              </div>
+        
+      </div><br><br>
+      <h2>Example 12.</h2>
+<p><em>"Using the .offset classes, create a row that has space to the left and all the column content shown to the right."</em> </p>
+<p> This first column has the "offset-md-3" class</p>
+<div class="container">
+  <div class="row">
+    <div class="col border-blue offset-md-3"> content column 1</div>
+    <div class="col border-red"> content column 2</div>
+  </div>
+</div>
+
+      <h2>Example 13.</h2> This 5x5 "x" grid was made in part with the justify-content class
+ <div class="container xcontain">
+          <div class="row">
+       <div class="col x">
+        O
+       </div>
+       <div class="col y">
+          O
+         </div>
+         <div class="col y">
+            O
+           </div>
+           <div class="col y">
+              O
+             </div>
+             <div class="col x">
+                O
+               </div>
+               </div>
+               <div class="row">
+                  <div class="col y">
+                   O
+                  </div>
+                  <div class="col x">
+                     O
+                    </div>
+                    <div class="col y">
+                       O
+                      </div>
+                      <div class="col x">
+                         O
+                        </div>
+                        <div class="col y">
+                           O
+                          </div>
+                          </div>
+                          <div class="row">
+                              <div class="col y">
+                               O
+                              </div>
+                              <div class="col y">
+                                 O
+                                </div>
+                                <div class="col x">
+                                   O
+                                  </div>
+                                  <div class="col y">
+                                     O
+                                    </div>
+                                    <div class="col y">
+                                       O
+                                      </div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col y">
+                                           O
+                                          </div>
+                                          <div class="col x">
+                                             O
+                                            </div>
+                                            <div class="col y">
+                                               O
+                                              </div>
+                                              <div class="col x">
+                                                 O
+                                                </div>
+                                                <div class="col y">
+                                                   O
+                                                  </div>
+                                                  </div>
+                                                  <div class="row">
+                                                      <div class="col x">
+                                                       O
+                                                      </div>
+                                                      <div class="col y">
+                                                         O
+                                                        </div>
+                                                        <div class="col y">
+                                                           O
+                                                          </div>
+                                                          <div class="col y">
+                                                             O
+                                                            </div>
+                                                            <div class="col x">
+                                                               O
+                                                              </div>
+                                                              </div>
+             
+     </div><br>
+     <h2>Example 14.</h2> This is an example of an input form
+     <div class="input-group mb-3 formcontain">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Input!</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+
+      <form>
+          <div class="form-group formcontain">
+              <label for="inputEmail"> Below here is a form-control class!</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email"></div> </form><br><br>
+  
+              <h2>Example 15.</h2> <em>"Create a button on the page for changing colors. Code several iterations of the button and alter the
+                  color of the some of the sections you created earlier by adding or removing classes"</em> <h5>See example 3 for more</h5>
+              <button type="button" class="btn btn-danger">I Change Color!</button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -212,5 +503,11 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script src="lodash.min.js"></script>
+    <script src="bootstrap_HW.js"></script>
+    <script>
+      $(document).ready(function() {});
+    </script>
   </body>
 </html>

@@ -43,7 +43,7 @@ var chDonutData2 = {
     {
       backgroundColor: ["#5b0094", "#4059ff", "#0f9600", "#c90f02", "#ff8400"],
       borderWidth: 0,
-      data: [70, 11, 19, 6, 4]
+      data: [7, 11, 19, 6, 4]
     }
   ]
 };

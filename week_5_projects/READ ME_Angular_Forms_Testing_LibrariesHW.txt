@@ -1,0 +1,85 @@
+Name: Michelle Dilzell
+Github user id: LaureiVarju
+Assignment Title: Angular Forms, Testing & Libraries
+Assigned: 8/16/19 (Day 20 Bootcamp - Week 4)
+
+Link to the assignment in github: 
+******
+
+Homework Status:
+
+Forms Section
+1. Create a component for entering new people. Use the template-based approach for wiring up a person model object. (defined in web component)
+
+2.Display an alert when the form is submitted. Or console.log the values.
+
+3. Create another editing component, Use the reactive model for building the form.
+(reactive models use an explicit binding model defined in the TS component. Uses form state and observable streams to keep the display and model always in synch. Reactive forms - implemented in ReactiveFormsModule. In the packae @angular/forms. Import it in the AppModule so it is available to all components. Use the FormControl class in the component.) (see slides 7-11 for more)
+
+4. Create a class with several properties, Create an editing component for that class. Use the FormBuilder to shorten the creation of the form.
+
+5.Create a button that isn't part of the form.
+
+6. Code the button to change the data in the model on click. 
+(keep the form open to ensure the data is being refreshed on the form)
+
+--------------
+Testin Section.
+1. Create a new project. Run the "ng test" command.
+(there may be errors concerning type.d. Typescript and Jasmine issue.
+
+2. Make sure that package.json file is referencing Typescript 2.9.0. May need to do an npm install to get the version to take. May need to do a cache clean and then an "npm install".
+
+3. After the tests are successful, change the title of the page. Tests should run and things should break. Change the test so that it passes.
+
+4. Stop the test with Ctrl C in the cmd window.
+
+5. Create a new service component. Review its .spec file. Run the test framework again to make sure that the service tests are seen and run.
+
+6. Add some logic to the service, Then write a test to validate the logic.
+
+7. TDD(Test Driven Component) "TDD is the process of writing tests BEFORE writing the code. So now, write a test for some
+functionality that doesn't yet exist in the service. It could be something like get person's full name.
+Obviously since the function doesn't exist yet the test will not even compile, let alone pass. Now code
+just enough functionality in the service to make the test pass. For example, if the expectation is for
+the method to return the name "Tom", simply return the hardcoded string "Tom". Once it passes,
+refactor it to actually get the data from an actual source (fake or otherwise). Refactor/Run Tests until
+everything passes again"
+
+8. Create a new service component without the automatic .spec file. Run ng generate help to get the proper syntax for that option.
+
+9. Create tests for it by manually creating the spec file. 
+------------------------------
+
+Animation.
+
+1. Import the BrowserAnimationsModule into the AppModule.
+2. Create a new component to test the process to create animations
+3. In the new component, import functions we'll need (trigger, state, style, animate, transition).
+
+4. Add the animations property in the @Component declaration.
+
+5. Create an animation to transition between 2 different states on a small area of the screen. (like a small div.) Control the state via a simple button.
+
+6. Add logic to create more states via an enum (at least 3). Change the logic to switch states. Create separate buttons for each state - such that clicking the button will set the state property. 
+
+-------------------
+
+Material and PrimeNG
+1. Create 2 new projects. (Mat-Test) and (Prime-Test).Remove the content from the example pages. 
+
+2. "Using the documentation on each site.." create instances of the following in each project:
+button
+input
+select
+Menu with Menu Items
+Tabbed page
+Data Table
+
+3. In each case, experiment with different styles and options.
+ie. normal button, rounded, a button with an icon. etc.
+
+4. What controls are unique to a particular library?
+5. Are there any that are much easier in one library?
+
+------------
