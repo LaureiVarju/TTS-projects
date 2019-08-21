@@ -58,6 +58,39 @@ var arrObj = [
 // let mult20 = _.range([(start = 20)], 501, [(step = 20)]);
 // console.log(mult20);
 
-_.filter(arrObj, function(o) {
-  return !o.CO;
+// let ColPeople = _.filter(arrObj, { state: "CO" });
+// console.log(ColPeople);
+
+/* _.countBy() function create statements that print out the number
+of residents in each state.
+hint - for the array returned by countby, use a foreach to print the results */
+
+// let ColPeople = _.filter(arrObj, { state: "CO" });
+// console.log(ColPeople);
+
+/* Using the _.filter() function and any necessary string methods, find and display all the people
+who have a last name of 7 more letters.
+*/
+
+// var output = _.countBy(arrObj, "state");
+// console.log(output);
+
+/* 
+Iterates over elements of collection, returning an array of all elements predicate returns truthy for. The predicate is invoked with three arguments: (value, index|key, collection).
+
+Note: Unlike _.remove, this method re */
+
+// console.log(
+//   _.filter(arrObj, function(obj) {
+//     return obj.name.split(" ")[1].length >= 7;
+//   })
+// );
+
+let lastname7plus = _.filter(arrObj, function(obj) {
+  return obj.name.split(" ")[1].length >= 7;
 });
+console.log(lastname7plus);
+
+// _.forEach({ a: 1, b: 2 }, function(value, key) {
+//   console.log(key);
+// });

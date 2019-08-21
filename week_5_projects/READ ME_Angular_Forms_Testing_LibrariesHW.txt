@@ -1,3 +1,6 @@
+
+
+STILL IN PROGRESS
 Name: Michelle Dilzell
 Github user id: LaureiVarju
 Assignment Title: Angular Forms, Testing & Libraries
@@ -5,11 +8,18 @@ Assigned: 8/16/19 (Day 20 Bootcamp - Week 4)
 
 Link to the assignment in github: 
 ******
+reactive forms setting and getting value (slide 11) that takes place in the component class
+
+Dan recommended this page over the slides:
+https://angular.io/guide/forms-overview
 
 Homework Status:
 
 Forms Section
+https://angular.io/guide/forms-overview
+https://angular.io/guide/forms <-- using that atn
 1. Create a component for entering new people. Use the template-based approach for wiring up a person model object. (defined in web component)
+(I did a version of the tour of heroes to learn these by starting over from scratch)
 
 2.Display an alert when the form is submitted. Or console.log the values.
 
@@ -65,7 +75,7 @@ Animation.
 
 -------------------
 
-Material and PrimeNG
+Material and PrimeNG (These are Angular libraries)
 1. Create 2 new projects. (Mat-Test) and (Prime-Test).Remove the content from the example pages. 
 
 2. "Using the documentation on each site.." create instances of the following in each project:
