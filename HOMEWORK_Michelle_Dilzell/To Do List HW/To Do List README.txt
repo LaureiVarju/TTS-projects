@@ -1,1 +1,1 @@
-Some of this project was referenced from tutorials on W3 Schools
+Many elements of this project were referenced from tutorials on W3 Schools
