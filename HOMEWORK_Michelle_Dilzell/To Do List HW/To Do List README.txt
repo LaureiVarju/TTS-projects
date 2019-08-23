@@ -1,1 +1,0 @@
-Many elements of this project were referenced from tutorials on W3 Schools

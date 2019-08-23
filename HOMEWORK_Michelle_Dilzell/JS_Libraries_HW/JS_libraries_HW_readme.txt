@@ -4,7 +4,7 @@ Assignment Title: Angular Basics Homework
 Assigned: 8/12/19 (Day 16 Bootcamp - Week 4)
 
 Link to the ongoing assignment in github: 
-************************************
+https://github.com/LaureiVarju/TTS-projects/tree/master/HOMEWORK_Michelle_Dilzell/JS_Libraries_HW
 
 Homework Status:
 In Progress -- See work done so far below
