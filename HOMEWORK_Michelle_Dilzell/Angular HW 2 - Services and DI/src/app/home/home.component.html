@@ -1,19 +1,55 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+</head>
 <h1>
-  Welcome to the Home Component
+  Welcome to the Home Component of This App
 </h1>
-<br />
 <p>
-  The values below (names/images) are being called from a public testing API
-  array.
+  Navigate around the app to see the following objectives of this assignment in
+  action:
 </p>
+<ul class="list-group">
+  <li class="list-group-item">
+    Basic Understanding of Angular 2+, Typescript, and generating services and
+    components with the CLI
+  </li>
+  <li class="list-group-item">
+    Routing functionality between components and Dependency Injection
+  </li>
+  <li class="list-group-item">Interactive Forms</li>
+  <li class="list-group-item">Animations</li>
+</ul>
 <br />
-<p>
-  There are only 3 values in this array:
-  <br /><a href="https://reqres.in/api/users"> https://reqres.in/api/users </a>
-</p>
 
-<ul *ngIf="users">
-  <li *ngFor="let user of users.data">
+<p>
+  <em>
+    I made some additional efforts to demonstrate other basic skills and
+    functionality:</em
+  >
+</p>
+<ul>
+  <li>Some basic styling to demonstrate front-end considerations</li>
+  <li>
+    Connecting to an external test-database to demonstrate some back-end skills
+    (See Below)
+  </li>
+</ul>
+
+<h5>
+  The values below (names/images) are being called from a public testing API
+  array:
+  <a href="https://reqres.in/api/users">
+    https://reqres.in/api/users
+  </a>
+</h5>
+
+<ul class="ulHERE" *ngIf="users">
+  <li class="liHERE" *ngFor="let user of users.data">
     <img [src]="user.avatar" />
     <p>{{ user.first_name }} {{ user.last_name }}</p>
   </li>

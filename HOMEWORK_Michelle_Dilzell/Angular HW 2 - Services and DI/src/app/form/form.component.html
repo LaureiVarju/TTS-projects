@@ -1,6 +1,6 @@
 <div class="container">
   <div [hidden]="submitted">
-    <h1>Hero Form</h1>
+    <h1>Hero Database & Generator</h1>
     <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
       <div class="form-group">
         <label for="name">Name</label>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="form-group">
-        <label for="power">Hero Power</label>
+        <label for="power">Human Power</label>
         <select
           class="form-control"
           id="power"
@@ -51,7 +51,7 @@
 
       <button
         type="submit"
-        class="btn btn-success"
+        class="btn btn-info"
         [disabled]="!heroForm.form.valid"
       >
         Submit
