@@ -1,4 +1,4 @@
-# Tech Talent South Projects: Summer 2019 bootcamp
+# Tech Talent South: Summer 2019 Hartford bootcamp - Michelle Dilzell
 
 ## This repository represents my work, progress, and occasional stray thoughts while progressing through a Tech Talent Select coding Bootcamp.
 
@@ -8,8 +8,8 @@ CSS & HTML: ~7 days
 Bootstrap:  2 days  
 Javascript:  8 days  
 Github basics: 1 day  
-Angular (Typescript): 3 days  
-Java: 2 days  
+Angular/Typescript: 3 days  
+Java Concepts: 2 days  
 Unit Testing and TDD: half a day  
 SQL: not yet discussed  
 Spring & Hibernate: not yet discussed  
@@ -33,10 +33,12 @@ Continued exercises in Javascript with a focus on manipulating and accessing dat
 [Week 4](https://github.com/LaureiVarju/TTS-projects/tree/master/week_4_projects)   
 Focus on basic Github concepts, front-end debugging, control flow, DOM manipulation, and more features of popular JS libraries.
 
-[JS Libraries]
+[JS Libraries](https://github.com/LaureiVarju/TTS-projects/blob/master/HOMEWORK_Michelle_Dilzell/JS_Libraries_HW.zip)    
+A TTS assignment with exercises solving problems by utilizing functions within the following JS libraries - jQuery, Lodash, Moment, Math, DataTable and Chart   
 
-[To-Do List]
+[To-Do List](https://github.com/LaureiVarju/TTS-projects/blob/master/HOMEWORK_Michelle_Dilzell/To%20Do%20List%20HW.zip)
+A TTS assignment with an interactive To-Do list using Javascript and JQuery
  
-[Week 5]
-(https://github.com/LaureiVarju/TTS-projects/tree/master/week_5_projects)
-Angular, Angular, Angular  
+[Week 5 - Angular Projects](https://github.com/LaureiVarju/TTS-projects/tree/master/HOMEWORK_Michelle_Dilzell/Angular%20HW%202%20-%20Services%20and%20DI)   
+The majority of this week has been spent on updating Github pages and refining an Angular project that includes basic routing, dependency injection, interactive forms and animations. Some Java instruction has also begun.
+
