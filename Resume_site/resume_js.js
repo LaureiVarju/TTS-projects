@@ -43,7 +43,7 @@ var chDonutData2 = {
     {
       backgroundColor: ["#5b0094", "#4059ff", "#0f9600", "#c90f02", "#ff8400"],
       borderWidth: 0,
-      data: [7, 11, 19, 6, 4]
+      data: [19, 7, 11, 6, 4]
     }
   ]
 };
@@ -58,7 +58,7 @@ if (chDonut2) {
 
 // donut 3
 var chDonutData3 = {
-  labels: ["Angular", "Bootstrap", "JQuery", "Popper"],
+  labels: ["Angular", "Bootstrap", "JQuery", "Spring/Hibernate"],
   datasets: [
     {
       backgroundColor: colors.slice(0, 4),

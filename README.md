@@ -2,14 +2,14 @@
 
 ## This repository represents my work, progress, and occasional stray thoughts while progressing through a Tech Talent Select coding Bootcamp.
 
-#### Classtime dedicated to various topics as of 8/28/19
+#### Classtime dedicated to various topics as of 9/4/19
 
 CSS & HTML: ~7 days  
 Bootstrap:  2 days  
 Javascript:  8 days  
 Github basics: 1 day  
 Angular/Typescript: 3 days  
-Java Concepts: 2 days  
+Java Concepts: 7 days  
 Unit Testing and TDD: half a day  
 SQL: not yet discussed  
 Spring & Hibernate: not yet discussed  
@@ -42,3 +42,5 @@ A TTS assignment with an interactive To-Do list using Javascript and JQuery
 [Week 5 - Angular Projects](https://github.com/LaureiVarju/TTS-projects/tree/master/HOMEWORK_Michelle_Dilzell/Angular%20HW%202%20-%20Services%20and%20DI)   
 The majority of this week has been spent on updating Github pages and refining and building upon an Angular project that includes basic routing, dependency injection, interactive forms, and animations. Some Java instruction has also begun.
 
+[Weeks 6 and 7]
+Continued work on Java concepts
