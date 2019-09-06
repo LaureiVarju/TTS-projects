@@ -42,6 +42,5 @@ A TTS assignment with an interactive To-Do list using Javascript and JQuery
 [Week 5 - Angular Projects](https://github.com/LaureiVarju/TTS-projects/tree/master/HOMEWORK_Michelle_Dilzell/Angular%20HW%202%20-%20Services%20and%20DI)   
 The majority of this week has been spent on updating Github pages and refining and building upon an Angular project that includes basic routing, dependency injection, interactive forms, and animations. Some Java instruction has also begun.
 
-[Weeks 6 and 7](https://github.com/LaureiVarju/TTS-projects/tree/master/HOMEWORK_Michelle_Dilzell/week_7_projects)   
-
+[Weeks 6 and 7](https://github.com/LaureiVarju/TTS-projects/tree/master/week_7_projects)   
 Continued work on Java concepts. Reviewed Control Flow, Lambdas and Streams, Linked Lists, Array Lists and Hashmaps. Created multiple versions of a dice game simulating craps. Some versions used else/if statements and do-while loops, others used enums and collections to check for win/lose/point conditions.
