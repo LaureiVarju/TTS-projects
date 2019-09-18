@@ -1,0 +1,408 @@
+@font-face {
+  font-weight: 500;
+  font-display: swap;
+  font-family: "Recoleta";
+  src: url("https://s1.wp.com/i/fonts/recoleta/500.eot");
+  src: url("https://s1.wp.com/i/fonts/recoleta/500.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://s1.wp.com/i/fonts/recoleta/500.woff2") format("woff2");
+}
+
+/* This section allows elements in the page to continue all the way to the borders of the page view*/
+html,
+body,
+div,
+h1,
+h3,
+a,
+em,
+font,
+td {
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  background: #fff;
+}
+
+nav,
+section {
+  display: block;
+}
+
+a img {
+  border: 0;
+}
+
+html {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1:not(.nav-menu-list-title),
+h2:not(.nav-menu-list-title) {
+  font-weight: 500;
+  font-family: Recoleta, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+strong,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+body {
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+}
+
+/*******Main menu nav bar formatting and page formatting ****** */
+.mainnav {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  z-index: 200;
+  background-color: #0087be;
+  border-bottom: 1px solid #0079aa;
+  color: white;
+  transition: opacity 0.2s ease-in;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+body.admin-bar-showing .mainnav {
+  top: 32px;
+}
+
+/* ***** Media query checking the display size ******/
+@media (max-width: 782px) {
+  body.admin-bar-showing .mainnav {
+    top: 46px;
+  }
+}
+
+/*-- Little redundant but I ran into trouble trying to combine these unles the same queries and classes */
+@media (max-width: 782px) {
+  body.admin-bar-showing .mainnav.stationary {
+    top: 0;
+  }
+}
+.mainnav.navbar0opacity {
+  background-color: rgba(0, 135, 190, 0);
+  border-bottom-color: rgba(0, 135, 190, 0);
+}
+
+.mainnav.stationary {
+  position: fixed;
+  top: 0;
+  opacity: 1;
+}
+body.admin-bar-showing .mainnav.stationary {
+  top: 32px;
+}
+
+/*--- This effects the nav bar and has to remain in this section of the css to function properly*/
+.link-box {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease-out;
+}
+
+/*-- This is all related to the Wordpress SVG on the upper left-hand corner */
+.wp-icon {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  fill: currentcolor;
+  overflow: hidden;
+}
+.wp-icon span {
+  display: block;
+  height: 2px;
+  background: currentcolor;
+}
+
+.wp-icon--close span {
+  position: absolute;
+  top: 17px;
+  left: 11px;
+  height: 2px;
+  width: 14px;
+  transform: rotate(45deg);
+}
+.wp-icon--close span + span {
+  transform: rotate(-45deg);
+}
+
+.wp-icon--logo {
+  width: 170px;
+}
+
+.wp-icon--menu {
+  width: 26px;
+  padding-top: 10px;
+}
+.wp-icon--menu span + span {
+  margin-top: 4px;
+}
+
+/* ******More Nav Bar formatting */
+.nav-contain {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  color: white;
+}
+
+.nav-contain-list {
+  position: relative;
+  display: flex;
+  align-items: inherit;
+}
+
+/* -- this keeps the Get Started and Login part on the right side of the screen */
+.nav-contain-list:first-of-type {
+  flex-grow: 1;
+}
+
+.nav-contain-item {
+  display: block;
+}
+
+.nav-contain-item--wide {
+  display: none;
+}
+
+.nav-contain-link {
+  display: block;
+  padding: 20px 12px 11px;
+}
+.nav-contain-link:not(#x) {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.nav-contain-link--down-arrow::after {
+  content: "\25BE";
+  display: inline-block;
+  margin-right: -1px;
+  position: relative;
+  left: 1px;
+}
+
+.nav-contain-link--logo,
+.nav-contain-link--menu {
+  padding: 9px 18px 0;
+}
+
+a.nav-contain-link {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .nav-contain-item--narrow {
+    display: none;
+  }
+
+  .nav-contain-item--wide {
+    display: block;
+  }
+
+  .nav-contain-link--logo {
+    padding-right: 13px;
+    padding-left: 23px;
+  }
+
+  .nav-contain-link--menu,
+  .nav-contain-link--primary {
+    padding-right: 24px;
+  }
+}
+
+.nav-menu {
+  position: absolute;
+  z-index: 803;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  pointer-events: none;
+}
+.admin-bar-showing .nav-menu {
+  top: 46px;
+}
+@media (min-width: 783px) {
+  .admin-bar-showing .nav-menu {
+    top: 32px;
+  }
+}
+
+/** This section is for the drop down menu buttons */
+.button-edits {
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background: #2497ff;
+  border-color: #2497ff;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid;
+  border-bottom-width: 2px;
+  margin: 0 auto;
+  padding: 0.5em 1.5em 0.55em;
+  transition: opacity 0.15s ease-out;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Self Explanatory */
+.button-edits {
+  color: white;
+  background: #d52c82;
+  border-color: #d52c82;
+}
+
+/*-- These affects most of the site, when I try combining these, I get lots of errors so I made sure they remained in several classes */
+.div-contain {
+  padding: 15rem 7%;
+  position: relative;
+  background-color: #016087;
+}
+.div-contain .div-contain-wrapper {
+  display: flex;
+  max-width: 1152px;
+  align-items: center;
+}
+.div-contain .div-contain-container {
+  order: 1;
+  z-index: 3;
+  width: 65%;
+  flex-grow: 2;
+  padding: 0 2rem 0 0;
+}
+.div-contain .div-contain-shapes {
+  order: 2;
+  z-index: 1;
+  display: flex;
+}
+
+/* These control some of the spacing betweem the first line of text and the elements to the right of the title and subtitle*/
+.div-contain .div-contain-title > span,
+.div-contain .div-contain-subtitle > span,
+.div-contain .div-contain-action > span {
+  display: block;
+}
+
+.div-contain .div-contain-subtitle,
+.div-contain .div-contain-action {
+  margin: 4rem 0 0 0;
+}
+.div-contain .div-contain-title {
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: 0;
+  color: #fff;
+}
+.div-contain .div-contain-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0;
+  color: #bbc9d5;
+}
+
+.div-contain .div-contain-action {
+  margin-top: 3rem;
+}
+
+/******************* All of this affects the W Circle /********************/
+
+.div-contain .shapes:nth-child(1) .shapes-fill,
+.div-contain .shapes:nth-child(2) .shapes-fill {
+  width: 314px;
+  height: 314px;
+}
+
+.div-contain .shapes:nth-child(1) {
+  width: 0;
+  margin-right: 45px;
+}
+
+.div-contain .shapes:nth-child(1) .shapes-fill {
+  transform: translate(calc(-100%), 0);
+}
+
+/*-----------I changed the W SVG to a local png so I could call it faster instead of relying on the sp1 host website (It's very slow) --------------*/
+
+.div-contain .shapes:nth-child(1) .shapes-fill::before {
+  content: url("w.png");
+}
+
+/* -- The pseudo class here keeps the W and the woman from overlapping --*/
+.div-contain .shapes:nth-child(2) .shapes-fill {
+  top: -20px;
+  width: 332px;
+  height: 332px;
+  background-image: url("headline-circle.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* -- all menu links fall under the media umbrella */
+@media (max-width: 1366px) {
+  .div-contain .div-contain-title {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+    /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+    overflow-y: scroll;
+    /* Keeps page centred in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%;
+    /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust: 100%;
+    /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  }
+}

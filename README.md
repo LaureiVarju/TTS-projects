@@ -2,17 +2,17 @@
 
 ## This repository represents my work, progress, and occasional stray thoughts while progressing through a Tech Talent Select coding Bootcamp.
 
-#### Classtime dedicated to various topics as of 9/4/19
+#### Classtime dedicated to various topics as of 9/18/19
 
 CSS & HTML: ~7 days  
 Bootstrap:  2 days  
 Javascript:  8 days  
 Github basics: 1 day  
 Angular/Typescript: 3 days  
-Java Concepts: 7 days  
-Unit Testing and TDD: half a day  
-SQL: not yet discussed  
-Spring & Hibernate: not yet discussed  
+Java Concepts: 10 days  
+Unit Testing and TDD: 1 day
+SQL: 1 day  
+Spring & Hibernate: 4 days
 Restful JSON/HTTP Web APIS: not yet discussed  
 
 ### Outside of class, the majority of my time investment is towards OOP concepts and Java exercises.
@@ -44,3 +44,12 @@ The majority of this week has been spent on updating Github pages and refining a
 
 [Weeks 6 and 7](https://github.com/LaureiVarju/TTS-projects/tree/master/week_7_projects)   
 Continued work on Java concepts. Reviewed Control Flow, Lambdas and Streams, Linked Lists, Array Lists and Hashmaps. Created multiple versions of a dice game simulating craps. Some versions used else/if statements and do-while loops, others used enums and collections to check for win/lose/point conditions.
+
+[Weeks 8 and 9]](https://github.com/LaureiVarju/TTS-projects/tree/master/week_8_and_9_projects)
+Java assessment (Binary Trees, Big O Notation, and previous weeks topics).
+Spring, Hibernate and Spring Boot introductions, Design Patterns (Singleton, Factory Method, etc).
+SQL and relational databases, some RESTful API lectures, and work on a front-end project trying to match the splash page of a major enterprise website.
+
+[Front End Project](https://github.com/LaureiVarju/TTS-projects/tree/master/week_8_and_9_projects/wordpress_splash_page)
+An attempt to recreate the front splash page of Wordpress.com to spec. visually.
+

@@ -1,0 +1,18 @@
+html,
+body {
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.topdiv {
+  background: rgb(62, 122, 172);
+}
+.lastbox {
+  background-image: url("headline-circle-2x.jpg");
+}

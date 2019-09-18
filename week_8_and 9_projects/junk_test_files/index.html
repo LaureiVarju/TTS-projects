@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<!-- ^This tells the browser that this page is written in HTML 5, and to inerpret the code that way-->
+<!-- TO DO Go through the css and js in the HEAD-->
+<!-- TO DO -- Go through the desktop and mobile navbars -->
+<!-- TODO get rid of all external links ... href -->
+<!-- some of these lpc classes don't exist. they may all be JS references -->
+<!-- left off somewhere near 876-->
+
+<html lang="en">
+	<!-- This 'en' tag broke a LOT when taken out..many references in css-->
+
+	<head>
+	<title>WordPress.com: Create a Free Website or Blog</title>
+
+
+<link rel="stylesheet" type="text/css" href="firstCDN.css" media="all" />		
+<!-- This CDN here (also saved locally, first one, affects the top images, perhaps more, one of them disappears in a smaller viewport -->	
+<!-- This effects the jpgs (people) pictures top and bottom, the triangle play on the video, and the slight blue texture graphic-->
+<!-- try linking the min file?-->
+
+		
+<!-- This has something to do with the hamburger too-->
+<script>
+	(function() {
+				window.homepage = {
+			// this currency line triggers the hamburger somehow
+			'currency': 'USD',
+
+		};
+	})();
+</script>
+
+	</head>
+
+	<!--- Some of these ids and classes that were originally in the body are not referred to in css I can locate-->
+		
+		<body>
+	
+					<!-- ******************* Nav bar starts here.******************* -->
+					<div>
+						<header class="masterbar is-transparent">
+							<nav class="x-nav">
+							<!-- This ^ separates the Login/Getting Started thing from the rest of the nav -->
+								<h3 class="x-hidden">Main Navigation Menu</h3>
+
+								<ul class="x-nav-list"> <!-- this is the container for the nav bar -->
+									<li class="x-nav-item">
+										<a class="x-nav-link x-nav-link--logo x-link" href="#">
+											<span class="x-hidden">WordPress.com</span>
+										<!-- this is the wordpress.ciom svg -->	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 170 36" class="x-icon x-icon--logo" style="left: 0px; top: 0px"><path d="M47.57 10l-2.79 10.72L41.99 10h-2.81l.65 2.3-2.45 8.78L34.7 10H32l3.8 14h2.96l2.28-7.49L43.17 24h2.95l4-14h-2.55zm28.39 4.06a9 9 0 0 0-1.86-.23c-3.4 0-5.26 2.27-5.26 5.6 0 3.31 1.86 4.82 4.05 4.82a5.45 5.45 0 0 0 3.2-1.17V24h2.33V10h-2.46v4.06zm0 7.08c-.8.73-1.55 1.13-2.34 1.13-1.36 0-2.23-.9-2.23-3.01 0-2.28 1.08-3.47 2.96-3.47.55 0 1.1.11 1.6.31v5.04zM64.2 15.7h-.09v-1.64h-2.3V24h2.47v-5.92c.77-1.46 1.71-1.94 3.28-1.94h.25V14a6.67 6.67 0 0 0-.67-.04c-1.34 0-2.26.52-2.94 1.75zm83.14-1.89c-3.4 0-5.01 2.2-5.01 5.23 0 3.02 1.6 5.2 5.01 5.2s5.01-2.18 5.01-5.2c0-3.03-1.63-5.23-5.02-5.23h.01zm0 8.44c-1.6 0-2.46-1.04-2.46-3.21 0-2.18.85-3.22 2.46-3.22 1.6 0 2.44 1.04 2.44 3.22 0 2.17-.84 3.21-2.45 3.21h.01zm19.12-8.44c-1.06 0-2.28.58-3.38 1.32l-.3.19c-.51-1.11-1.56-1.5-2.71-1.5-1.06 0-2.27.54-3.38 1.27v-1.03h-2.34V24h2.48v-7.13a5.3 5.3 0 0 1 2.61-.98c.81 0 1.32.44 1.32 1.84V24h2.46v-7.1c.92-.6 1.9-1 2.6-1 .82 0 1.32.43 1.32 1.84V24h2.46v-6.86c0-1.92-1.14-3.32-3.15-3.32zm-111.64 0c-3.4 0-5 2.2-5 5.23 0 3.02 1.6 5.2 5 5.2s5.02-2.18 5.02-5.2c0-3.03-1.64-5.23-5.03-5.23h.01zm0 8.44c-1.6 0-2.46-1.04-2.46-3.21 0-2.18.86-3.22 2.47-3.22 1.6 0 2.44 1.04 2.44 3.22 0 2.17-.85 3.21-2.46 3.21h.01zm40.31-6.56h-.08v-1.63h-2.31V24h2.46v-5.92c.77-1.46 1.71-1.94 3.28-1.94h.25V14a6.67 6.67 0 0 0-.67-.04c-1.33 0-2.25.52-2.94 1.75h.01zM86.05 10h-4.58v14h2.64v-4.87h1.93c2.99 0 5.16-1.61 5.16-4.62 0-3-2.17-4.51-5.16-4.51zm.02 7.08h-1.96v-5.01h1.95c1.6 0 2.38.88 2.38 2.44 0 1.57-.73 2.57-2.38 2.57h.01zm36.02-.23c0-.75.82-1.04 1.7-1.04.93.01 1.86.16 2.75.43V14.2a10.14 10.14 0 0 0-2.95-.38c-2.38 0-4.05 1.13-4.05 2.97 0 3.57 4.92 2.65 4.92 4.39 0 .85-.77 1.08-1.9 1.08-.8 0-2.07-.3-2.99-.63v2.03a8.29 8.29 0 0 0 2.9.59c2.32 0 4.53-.69 4.53-3.17.03-3.45-4.9-2.56-4.9-4.23zm-17.5-3.03c-3.18 0-4.83 2.47-4.83 5.16 0 3.7 1.94 5.27 5.1 5.27a11.81 11.81 0 0 0 3.65-.57v-2.05c-1.03.38-1.97.61-2.97.61-1.84 0-3.07-.5-3.13-2.67h6.36c.06-.49.09-.98.08-1.46 0-2.1-1.11-4.29-4.27-4.29zm-2.16 4.12c.15-1.38.9-2.26 2.13-2.26 1.32 0 1.72 1.05 1.72 2.26h-3.85zm10.7-1.09c0-.75.81-1.04 1.69-1.04.93.01 1.86.16 2.75.43V14.2a10.14 10.14 0 0 0-2.94-.38c-2.38 0-4.06 1.13-4.06 2.97 0 3.57 4.93 2.65 4.93 4.39 0 .85-.78 1.08-1.9 1.08-.8 0-2.07-.3-3-.63v2.03a8.28 8.28 0 0 0 2.9.59c2.32 0 4.54-.69 4.54-3.17.02-3.45-4.91-2.56-4.91-4.23zm21.97 2.1c0-2.33 1.27-3.12 2.78-3.12.94.03 1.88.22 2.76.57v-2.1a8.11 8.11 0 0 0-2.8-.48c-3.28 0-5.31 2-5.31 5.25 0 3.07 1.46 5.18 5.16 5.18 1.17 0 2.08-.23 3.08-.57v-2.04c-1.13.43-2 .6-2.77.6-1.63 0-2.9-.75-2.9-3.3zM128.66 24h2.47v-2.55h-2.47V24zM1.72 16c0 4.47 2.6 8.32 6.36 10.15L2.7 11.41A11.24 11.24 0 0 0 1.72 16zM13 27.28c1.31 0 2.57-.23 3.75-.64l-.08-.15-3.47-9.5-3.38 9.83c1 .3 2.07.46 3.18.46zm1.55-16.57l4.08 12.13 1.13-3.76c.48-1.56.85-2.68.85-3.65 0-1.4-.5-2.36-.92-3.1-.58-.94-1.11-1.73-1.11-2.65 0-1.04.78-2 1.9-2h.14A11.24 11.24 0 0 0 13 4.72 11.27 11.27 0 0 0 3.58 9.8l.72.02c1.18 0 3-.15 3-.15.62-.03.69.86.08.93 0 0-.61.08-1.3.11l4.12 12.22 2.47-7.4-1.76-4.82a20.13 20.13 0 0 1-1.18-.1c-.61-.04-.54-.97.07-.94 0 0 1.86.15 2.97.15 1.18 0 3-.15 3-.15.61-.03.69.86.08.93 0 0-.61.07-1.3.11zm4.12 15.04A11.28 11.28 0 0 0 24.28 16c0-1.96-.5-3.8-1.38-5.41a10.65 10.65 0 0 1-.78 5.2l-3.45 9.96zM13 29a13 13 0 1 1 0-26 13 13 0 0 1 0 26z" fill="inherit" fill-rule="nonzero"/><title>WordPress.com icon &amp; logo.</title></svg>										</a>
+									</li>
+									<li class="x-nav-item x-nav-item--wide">
+										<button class="x-nav-link x-nav-link--chevron x-link" data-dropdown-trigger="products" aria-haspopup="true" aria-expanded="false">
+											Products										</button>
+									</li>
+									<li class="x-nav-item x-nav-item--wide">
+										<button class="x-nav-link x-nav-link--chevron x-link" data-dropdown-trigger="features" aria-haspopup="true" aria-expanded="false">
+											Features </button>
+									</li>
+									<li class="x-nav-item x-nav-item--wide">
+										<button class="x-nav-link x-nav-link--chevron x-link" data-dropdown-trigger="resources" aria-haspopup="true" aria-expanded="false">
+											Resources </button>
+									</li>
+									<li class="x-nav-item x-nav-item--wide">
+										<a class="x-nav-link x-link" href="#">
+											Plans & Pricing										</a>
+									</li>
+								</ul>
+								<ul class="x-nav-list"> <!-- This contains the Login and Get Started Box -->
+									<li class="x-nav-item x-nav-item--wide x-nav-item--logged-in">
+										<a class="x-nav-link x-link" href="#">
+											Log In										</a>
+									</li>
+									<li class="x-nav-item x-nav-item--wide">
+										<a class="x-nav-link x-nav-link--primary x-link" href="#" onClick="if(window.homepage.regily_variation === 'regily'){ window.location.hash = '#regily'; return false;}">
+											Get Started										</a>
+									</li>
+									<li class="x-nav-item x-nav-item--narrow">
+										<button class="x-nav-link x-nav-link--menu x-link" aria-haspopup="true" aria-expanded="false">
+											<span class="x-hidden">Menu</span>
+											<span class="x-icon x-icon--menu">
+												<!-- These 3 spans make the hamburger lines in the responsive navigation toggle-->
+												<span></span>
+												<span></span>
+												<span></span>
+												<!-- End of hamburger lines-->
+											</span>
+										</button>
+									</li>
+								</ul>
+							</nav>
+						</header>
+					</div>
+					<!-- *******************Nav bar ends here.******************* -->
+
+					<!-- ***********************Desktop dropdowns start here. ***********************-->
+					<div class="x-dropdown">
+						<div class="x-dropdown-top">
+							<div class="x-dropdown-top-fill"></div>
+						</div>
+						<div class="x-dropdown-middle"></div>
+						<div class="x-dropdown-bottom">
+							<div class="x-dropdown-bottom-fill"></div>
+						</div>
+						<div class="x-dropdown-content" data-dropdown-name="products" aria-label="Products" aria-hidden="true">
+							<ul>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Blogs									</a>
+								</li>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Websites									</a>
+								</li>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Domains									</a>
+								</li>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										eCommerce									</a>
+								</li>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Self & Hosted Solutions									</a>
+								</li>
+							</ul>
+							<div class="x-dropdown-content-separator"></div>
+							<ul>
+								<li>
+									<a class="x-dropdown-link x-link x-external-link" href="#">
+										Enterprise									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="x-dropdown-content" data-dropdown-name="features" aria-label="Features" aria-hidden="true">
+							<ul>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Overview									</a>
+								</li>
+							</ul>
+							<div class="x-dropdown-content-separator"></div>
+							<ul>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Themes									</a>
+								</li>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Plugins									</a>
+								</li>
+																<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Google Apps									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="x-dropdown-content" data-dropdown-name="resources" aria-label="Resources" aria-hidden="true">
+							<ul>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Support									</a>
+								</li>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										News									</a>
+								</li>
+								<li>
+									<a class="x-dropdown-link x-link" href="#">
+										Expert Tips									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- ***********************Desktop dropdowns end here. *********************** -->
+
+				<!-- ***********************Mobile menu starts here.*********************** -->
+					<div class="x-menu" aria-label="Menu" aria-hidden="true">
+						<div class="x-menu-overlay"></div>
+						<h3 class="x-hidden">Navigation menu</h3>
+
+						<div class="x-menu-content">
+							<button class="x-menu-button x-link">
+								<span class="x-hidden">Close menu</span>
+								<span class="x-icon x-icon--close">
+								<span></span>
+								<span></span>
+							</span>
+							</button>
+							<div class="x-menu-list">
+								<h4 class="x-menu-list-title">
+									Get Started								</h4>
+								<ul class="x-menu-grid x-menu-grid--logged-in">
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="https://wordpress.com/start/?ref=logged-out-homepage-lp">
+											Add a New Site											<span aria-hidden="true">&#8250;</span>
+										</a>
+									</li>
+								</ul>
+								<ul class="x-menu-grid x-menu-grid--logged-out">
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#"  onClick="if(window.homepage.regily_variation === 'regily'){ window.location.hash = '#regily'; return false;}">
+											Sign Up											<span aria-hidden="true">&#8250;</span>
+										</a>
+									</li>
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Log In											<span aria-hidden="true">&#8250;</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="x-menu-list">
+								<h4 class="x-hidden">
+									About								</h4>
+								<ul class="x-menu-grid">
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Plans & Pricing										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="x-menu-list x-menu-list--purple">
+								<h4 class="x-menu-list-title">
+									Products								</h4>
+								<ul class="x-menu-grid">
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Blogs										</a>
+									</li>
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Websites										</a>
+									</li>
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Domains										</a>
+									</li>
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											eCommerce										</a>
+									</li>
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Self & Hosted Solutions										</a>
+									</li>
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link x-external-link" href="#">
+											Enterprise										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="x-menu-list x-menu-list--pink">
+								<h4 class="x-menu-list-title">
+									<a class="x-menu-link x-link" href="#">
+										Features									</a>
+								</h4>
+								<ul class="x-menu-grid">
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Overview										</a>
+									</li>
+								</ul>
+								<ul class="x-menu-grid">
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Themes										</a>
+									</li>
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Plugins										</a>
+									</li>
+																		<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Google Apps										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="x-menu-list x-menu-list--celadon">
+								<h4 class="x-menu-list-title">
+									Resources								</h4>
+								<ul class="x-menu-grid">
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											News										</a>
+									</li>
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#" >
+											Support										</a>
+									</li>
+									<li class="x-menu-grid-item">
+										<a class="x-menu-link x-link" href="#">
+											Expert Tips										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- *********************** Mobile menu ends here. *********************** -->
+
+
+					<!---***** These lpc id and classes are referred to in the first CDN file, but not"lp" ones. -->
+						<section id="lpc-headline" class="lpc-headline">
+			<div class="lpc-headline-wrapper"> <!-- This section ID contains everything from the end of the nav bar to the bottom of the first blue div with the W logo --> 
+				
+									<div class="lpc-headline-shapes">
+								<div id="lpc-shape" class="lpc-shape">
+			<div class="lpc-shape-wrapper">
+				<div class="lpc-shape-container">
+
+					<div class="lpc-shape-ratio"></div>
+					<div class="lpc-shape-fill"></div>
+
+				</div>
+			</div>
+		</div>
+				<div id="lpc-shape.2" class="lpc-shape">
+			<div class="lpc-shape-wrapper">
+				<div class="lpc-shape-container">
+
+					<div class="lpc-shape-ratio"></div>
+					<div class="lpc-shape-fill"></div>
+
+				</div>
+			</div>
+		</div>
+				<div id="lpc-shape.3" class="lpc-shape">
+			<div class="lpc-shape-wrapper">
+				<div class="lpc-shape-container">
+
+					<div class="lpc-shape-ratio"></div>
+					<div class="lpc-shape-fill"></div>
+
+				</div>
+			</div>
+		</div>
+							</div>
+				
+				<div class="lpc-headline-container">
+
+					
+					
+					<!--is this where he first div begins?-->
+											<h1 class="lpc-headline-title">
+															<span>WordPress powers</span>
+															<span>34% of the internet.</span>
+													</h1>
+					
+											<h3 class="lpc-headline-subtitle">
+															<span>WordPress.com is the best way to experience it.</span>
+															<span>Start building your website today.</span>
+													</h3>
+					
+					
+										
+											<div class="lpc-headline-cta">
+
+							
+															<div class="lpc-headline-cta-button">
+														<a id="lpc-button" class="lpc-button" href="#"> Start your website</a>
+												</div>
+							
+						</div>
+					
+					
+					
+				</div>
+			</div>
+		</section>
+				<section class=" lpc-plans lpc-plans-five"				data-adjust-height-breakpoint="660"
+				data-current-page="1"
+		>
+			<div class="lpc-plans-wrapper">
+				<div class="lpc-plans-container">
+
+											<div class="lpc-plans-shapes">
+									<div id="lpc-shape.4" class="lpc-shape">
+			<div class="lpc-shape-wrapper">
+				<div class="lpc-shape-container">
+
+					<div class="lpc-shape-ratio"></div>
+					<div class="lpc-shape-fill"></div>
+
+				</div>
+			</div>
+		</div>
+				<div id="lpc-shape.5" class="lpc-shape">
+			<div class="lpc-shape-wrapper">
+				<div class="lpc-shape-container">
+
+					<div class="lpc-shape-ratio"></div>
+					<div class="lpc-shape-fill"></div>
+
+				</div>
+			</div>
+		</div>
+								</div>
+					
+					<div class="lpc-plans-block">
+
+						
+						
+						
+													<div class="lpc-plans-featured-plan">
+										<div id="lpc-featured-plan" class="lpc-featured-plan">
+			<div>
+				<div class="lpc-featured-plan-container">
+
+											<div>
+
+															<h3 class="lpc-featured-plan-title">
+																			<span>Free to start,</span>
+																			<span>with 4 ways to grow.</span>
+																	</h3>
+							
+															<h4 class="lpc-featured-plan-subtitle">
+																			<span>Whether you want to share your ideas, start a business, or run a store, you can do it all on WordPress.com.</span>
+																	</h4>
+							
+						</div>
+					
+											<div class="lpc-featured-plan-block-2">
+
+															<div class="lpc-featured-plan-block">
+											<div id="lpc-plan-free" class="lpc-plan lpc-plan-free">
+
+							<div class="details">
+					
+					
+											<h3 class="lpc-plan-header-title">
+							Free						</h3>
+					
+											<h4 class="lpc-plan-header-subtitle">
+							Best for Getting Started						</h4>
+					
+											<h5 class="lpc-plan-header-price">
+							<span>
+								<sup>$</sup>0							</span>
+						</h5>
+					
+											<p class="lpc-plan-header-timeframe">
+							for life						</p>
+									</div>
+			
+			
+			
+							<div class="lpc-plan-cta-block">
+					<p class="lpc-plan-cta-block-cta lpc-plan-cta">
+											<a id="lpc-button.2" class="lpc-button" href="#" data-regily-trigger="click" data-regily-custom-data='{"plan":"free" }'>Start with Free</a>
+									</p>
+				</div>
+			
+							<div class="lpc-plan-summary">
+							<div id="lpc-paragraphs" class="lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+
+<!-- The &nbsp; creates non-breaking sections when word wrap happens. -->
+											<p>Create a beautiful, simple website in minutes.</p>
+					
+				</div>
+			</div>
+		</div>
+						</div>
+			
+		</div>
+										</div>
+							
+						</div>
+					
+				</div>
+			</div>
+		</div>
+									</div>
+						
+						
+													<div class="lpc-plans-table-wrapper">
+								<div class="lpc-plans-table-container">
+									<div class="lpc-plans-table plans-table lpc-plans-table-five">
+																							<div id="lpc-plan-free.2" class="lpc-plan lpc-plan-free">
+
+							<div class="details">
+					
+					
+											<h3 class="lpc-plan-header-title">
+							Free						</h3>
+					
+											<h4 class="lpc-plan-header-subtitle">
+							Best for Getting Started						</h4>
+					
+											<h5 class="lpc-plan-header-price">
+							<span>
+								<sup>$</sup>0							</span>
+						</h5>
+					
+											<p class="lpc-plan-header-timeframe">
+							for life						</p>
+									</div>
+			
+			
+			
+							<div class="lpc-plan-cta-block">
+					<p class="lpc-plan-cta-block-cta lpc-plan-cta">
+											<a id="lpc-button.3" class="lpc-button button is-cta" href="#" data-regily-trigger="click" data-regily-custom-data='{"plan":"free" }'>Start with Free</a>
+									</p>
+				</div>
+			
+							<div class="lpc-plan-summary">
+							<div id="lpc-paragraphs.2" class="lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+
+											<p>Create a beautiful, simple website in minutes.</p>
+					
+				</div>
+			</div>
+		</div>
+						</div>
+			
+		</div>
+																									<div id="lpc-plan-personal" class="lpc-plan lpc-plan-personal price-monthly">
+
+							<div class="details">
+					
+					
+											<h3 class="lpc-plan-header-title">
+							Personal						</h3>
+					
+											<h4 class="lpc-plan-header-subtitle">
+							Best for Personal Use						</h4>
+					
+											<h5 class="lpc-plan-header-price">
+							<span>
+								<sup>$</sup>5							</span>
+						</h5>
+					
+											<p class="lpc-plan-header-timeframe">
+							per month, billed yearly						</p>
+									</div>
+			
+			
+			
+							<div class="lpc-plan-cta-block">
+					<p class="lpc-plan-cta-block-cta lpc-plan-cta">
+											<a id="lpc-button.4" class="lpc-button button is-cta" href="#" data-regily-trigger="click" data-regily-custom-data='{"plan":"personal" }'>Start with Personal</a>
+									</p>
+				</div>
+			
+							<div class="lpc-plan-summary">
+							<div id="lpc-paragraphs.3" class="lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+
+											<p>Add some personality to your website with a custom domain and access to 24/7 support.</p>
+					
+				</div>
+			</div>
+		</div>
+						</div>
+			
+		</div>
+																									<div id="lpc-plan-premium" class="lpc-plan lpc-plan-premium is-featured">
+
+							<div class="details">
+					
+											<div class="lpc-plan-header-badge">
+							popular						</div>
+					
+											<h3 class="lpc-plan-header-title">
+							Premium						</h3>
+					
+											<h4 class="lpc-plan-header-subtitle">
+							Best for Freelancers						</h4>
+					
+											<h5 class="lpc-plan-header-price">
+							<span>
+								<sup>$</sup>8							</span>
+						</h5>
+					
+											<p class="lpc-plan-header-timeframe">
+							per month, billed yearly						</p>
+									</div>
+			
+			
+			
+							<div class="lpc-plan-cta-block">
+					<p class="lpc-plan-cta-block-cta lpc-plan-cta">
+											<a id="lpc-button.5" class="lpc-button button is-cta" href="#" data-regily-trigger="click" data-regily-custom-data='{"plan":"premium" }'>Start with Premium</a>
+									</p>
+				</div>
+			
+							<div class="lpc-plan-summary">
+							<div id="lpc-paragraphs.4" class="lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+
+											<p>Build a professional site with everything you need to design, edit, and control your content.</p>
+					
+				</div>
+			</div>
+		</div>
+						</div>
+			
+		</div>
+																									<div id="lpc-plan-business" class="lpc-plan lpc-plan-business plan-business price-monthly">
+
+							<div class="details">
+					
+					
+											<h3 class="lpc-plan-header-title">
+							Business						</h3>
+					
+											<h4 class="lpc-plan-header-subtitle">
+							Best for Small Businesses						</h4>
+					
+											<h5 class="lpc-plan-header-price">
+							<span class="price-business-plan">
+								<sup>$</sup>25							</span>
+						</h5>
+					
+											<p class="lpc-plan-header-timeframe">
+							per month, billed yearly						</p>
+									</div>
+			
+			
+			
+							<div class="lpc-plan-cta-block">
+					<p class="lpc-plan-cta-block-cta lpc-plan-cta">
+											<a id="lpc-button.6" class="lpc-button button is-cta" href="#" data-regily-trigger="click" data-regily-custom-data='{"plan":"business" }'>Start with Business</a>
+									</p>
+				</div>
+			
+							<div class="lpc-plan-summary">
+							<div id="lpc-paragraphs.5" class="lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+
+											<p>Power your business with a professional design, Google Analytics, and live support.</p>
+					
+				</div>
+			</div>
+		</div>
+						</div>
+			
+		</div>
+																									<div id="lpc-plan-ecommerce" class="lpc-plan lpc-plan-ecommerce plan-ecommerce price-monthly">
+
+							<div class="details">
+					
+					
+											<h3 class="lpc-plan-header-title">
+							eCommerce						</h3>
+					
+											<h4 class="lpc-plan-header-subtitle">
+							Best for Online Stores						</h4>
+					
+											<h5 class="lpc-plan-header-price">
+							<span class="price-ecommerce-plan">
+								<sup>$</sup>45							</span>
+						</h5>
+					
+											<p class="lpc-plan-header-timeframe">
+							per month, billed yearly						</p>
+									</div>
+			
+			
+			
+							<div class="lpc-plan-cta-block description">
+					<p class="lpc-plan-cta-block-cta lpc-plan-cta">
+											<a id="lpc-button.7" class="lpc-button" href="#" data-regily-trigger="click" data-regily-custom-data='{"plan":"ecommerce" }'>Start with eCommerce</a>
+									</p>
+				</div>
+			
+							<div class="lpc-plan-summary">
+							<div id="lpc-paragraphs.6" class="lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+
+											<p>Open your online store with a powerful, flexible platform designed to grow with you.</p>
+					
+				</div>
+			</div>
+		</div>
+						</div>
+			
+		</div>
+																					</div>
+								</div>
+															</div>
+						
+											</div>
+
+											<div class="lpc-plans-compare-button">
+												<a id="lpc-button.8" class="lpc-button" href="#">Compare our plans ›</a>
+										</div>
+					
+					<div class="lpc-plans-tooltip-block">
+						<div class="lpc-plans-tooltip-arrow"></div>
+						<div class="lpc-plans-tooltip-content"></div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+				<section id="lpc-features" class="lpc-features">
+			<div class="lpc-features-wrapper">
+				<div class="lpc-features-container">
+
+											<div class="lpc-features-shapes">
+									<div id="lpc-shape.6" class="lpc-shape">
+			<div class="lpc-shape-wrapper">
+				<div class="lpc-shape-container">
+
+					<div class="lpc-shape-ratio"></div>
+					<div class="lpc-shape-fill"></div>
+
+				</div>
+			</div>
+		</div>
+								</div>
+					
+											<h2 class="lpc-features-title">
+															<span>What can you do on WordPress.com?</span>
+													</h2>
+					
+											<h3 class="lpc-features-subtitle">
+															<span>WordPress.com gives you everything you need to create anything you want.</span>
+															<span>It’s flexible, secure, and powerful, just like you want your business to be.</span>
+													</h3>
+					
+											<div class="lpc-features-block">
+																							<div class="lpc-features-block-item">
+											<div id="lpc-feature" class="lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon" class="lpc-gridicon lpc-feature-icon" style="color: #fff; background-color: #204A69">
+			<svg class="gridicon gridicons-heart" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M16.5 3c-1.862 0-3.505.928-4.5 2.344C11.005 3.928 9.362 3 7.5 3 4.462 3 2 5.462 2 8.5c0 5.72 6.5 10.438 10 12.85 3.5-2.412 10-7.13 10-12.85C22 5.462 19.538 3 16.5 3z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title">
+							Build a fan base.						</h5>
+					
+											<div class="lpc-feature-description">
+							Promote your products, use advanced statistics and SEO tools, and connect with built-in audiences on social media to grow your business.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+																							<div class="lpc-features-block-item">
+											<div id="lpc-feature.2" class="lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon.2" class="lpc-gridicon lpc-feature-icon" style="color: #fff; background-color: #204A69">
+			<svg class="gridicon gridicons-cart" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M9 20c0 1.1-.9 2-2 2s-1.99-.9-1.99-2S5.9 18 7 18s2 .9 2 2zm8-2c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm.396-5c.937 0 1.75-.65 1.952-1.566L21 5H7V4c0-1.105-.895-2-2-2H3v2h2v11c0 1.105.895 2 2 2h12c0-1.105-.895-2-2-2H7v-2h10.396z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title">
+							Open a store.						</h5>
+					
+											<div class="lpc-feature-description">
+							Process payments, configure taxes and shipping, build a marketing plan—you make the widgets, we’ll make the website.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+																							<div class="lpc-features-block-item">
+											<div id="lpc-feature.3" class="lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon.3" class="lpc-gridicon lpc-feature-icon" style="color: #fff; background-color: #204A69">
+			<svg class="gridicon gridicons-reader" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M3 4v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4H3zm7 11H5v-1h5v1zm2-2H5v-1h7v1zm0-2H5v-1h7v1zm7 4h-5v-5h5v5zm0-7H5V6h14v2z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title">
+							Start a blog.						</h5>
+					
+											<div class="lpc-feature-description">
+							Everyone has a point of view. Make your mark online with the world’s greatest blogging tool, and join a community millions strong that’s waiting to hear what you have to say.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+																							<div class="lpc-features-block-item">
+											<div id="lpc-feature.4" class="lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon.4" class="lpc-gridicon lpc-feature-icon" style="color: #fff; background-color: #204A69">
+			<svg class="gridicon gridicons-layout" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M8 20H5c-1.105 0-2-.895-2-2V6c0-1.105.895-2 2-2h3c1.105 0 2 .895 2 2v12c0 1.105-.895 2-2 2zm8-10h4c1.105 0 2-.895 2-2V5c0-1.105-.895-2-2-2h-4c-1.105 0-2 .895-2 2v3c0 1.105.895 2 2 2zm5 10v-6c0-1.105-.895-2-2-2h-5c-1.105 0-2 .895-2 2v6c0 1.105.895 2 2 2h5c1.105 0 2-.895 2-2z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title">
+							Design a portfolio.						</h5>
+					
+											<div class="lpc-feature-description">
+							Thousands of themes means there’s a layout that’s just right for you, while storage and design options ensure you can upload anything you need to and give your work the stage it deserves.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+													</div>
+					
+											<div class="lpc-features-cta">
+
+															<div class="lpc-features-cta-block">
+
+																			<div class="lpc-features-cta-title">
+											Getting started is easy.										</div>
+									
+									
+								</div>
+							
+															<div class="lpc-closing-cta-button">
+														<a id="lpc-button.9" class="lpc-button button is-cta" href="#" data-regily-trigger="click">Start your website</a>
+												</div>
+							
+						</div>
+					
+				</div>
+			</div>
+		</section>
+				<section id="lpc-pitch-left" class="lpc-pitch lpc-pitch-left">
+			<div class="lpc-pitch-wrapper">
+				<div class="lpc-pitch-container">
+
+					
+											<div class="lpc-pitch-block-1">
+							
+															<h3 class="lpc-pitch-title">
+																			<span>Engineering</span>
+																			<span>happiness.</span>
+																	</h3>
+							
+															<div class="lpc-pitch-paragraphs">
+											<div id="lpc-paragraphs.7" class="lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+
+											<p>Our 24/7 support is powered by actual people. We call them Happiness Engineers.</p>
+											<p>From configuring settings to publishing pages to helping you pick the perfect design, they’re all ears, all smiles, and all human. Happiness Engineers also work all around the world—and around the clock, so there’s always someone there when you need them.</p>
+					
+				</div>
+			</div>
+		</div>
+										</div>
+							
+															<div class="lpc-pitch-cta">
+														<a id="lpc-button.10" class="lpc-button" href="#" data-regily-trigger="click">Start your website</a>
+												</div>
+													</div>
+					
+											<div class="lpc-pitch-block-2">
+
+							
+							
+															<div class="lpc-pitch-other">
+														<div class="lpc-pitch-other-block1">
+						<div class="lpc-pitch-other-block1-wrapper">
+							<div class="lpc-pitch-other-block1-container">
+																	<span>MORE THAN</span>
+																	<span>300</span>
+																	<span>Humans</span>
+															</div>
+						</div>
+					</div>
+					<div class="lpc-pitch-other-block2">
+						<div class="lpc-pitch-other-block2-wrapper">
+							<div class="lpc-pitch-other-block2-container">
+																	<span>AVAILABLE</span>
+																	<span>24/7</span>
+																	<span>Instantly</span>
+															</div>
+						</div>
+					</div>
+													</div>
+							
+						</div>
+					
+				</div>
+			</div>
+		</section>
+				<section id="lpc-pitch-right" class="lpc-pitch lpc-pitch-right lpc-pitch-right-support">
+			<div class="lpc-pitch-wrapper">
+				<div class="lpc-pitch-container">
+
+					
+											<div class="lpc-pitch-block-1">
+							
+															<h3 class="lpc-pitch-title">
+																			<span>You’re in</span>
+																			<span>good company.</span>
+																	</h3>
+							
+															<div class="lpc-pitch-paragraphs">
+											<div id="lpc-paragraphs.8" class="lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+
+											<p>People all over the world are doing all sorts of amazing things on WordPress.</p>
+											<p><a href="#"><svg class="gridicon gridicons-play" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 14.5v-9l6 4.5z"/></g></svg> Watch Annette’s story</a></p>
+											<p>An innovative New York City hair salon.</p>
+					
+				</div>
+			</div>
+		</div>
+										</div>
+							
+													</div>
+					
+											<div class="lpc-pitch-block-2">
+
+															<div class="lpc-pitch-video">
+											<div id="lpc-video" class="lpc-video click-tracking-enable">
+			<div class="lpc-video-wrapper">
+				<div class="lpc-video-container">
+
+											<div class="lpc-video-embed-container">
+							<video class="lpc-video-embed"
+								poster="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/testimonials/media/nappstar-success-story.jpg"																
+																																								
+								preload="none"																style=" width:100%; height:100%;"							>
+																											<source src="https://wpcom.files.wordpress.com/2019/01/nappstar-success-story-60s-wlogo.mp4" type="video/mp4">
+																								</video>
+						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+							
+							
+							
+						</div>
+					
+				</div>
+			</div>
+		</section>
+				<div id="lpc-video.2" class="lpc-video lpc-pitch-right-support-video-overlay">
+			<div class="lpc-video-wrapper">
+				<div class="lpc-video-container">
+
+											<div class="lpc-video-embed-container">
+							<video class="lpc-video-embed"
+								poster="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/testimonials/media/nappstar-success-story.jpg"																
+																								controls																
+								preload="none"																style=" width:100%; height:100%;"							>
+																											<source src="https://wpcom.files.wordpress.com/2019/01/nappstar-success-story-60s-wlogo.mp4" type="video/mp4">
+																								</video>
+						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+				<div id="lpc-testimonials" class="lpc-testimonials">
+			<div class="lpc-testimonials-wrapper">
+				<div class="lpc-testimonials-container">
+
+					
+					<div class="lpc-testimonials-collection">
+															<div id="lpc-testimonial.2" class="lpc-testimonial">
+			<div class="lpc-testimonial-wrapper">
+				<div class="lpc-testimonial-container">
+
+					<div class="lpc-testimonial-block">
+						<div class="lpc-testimonial-image">
+							<img id="lpc-image.2" class="lpc-image" src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/testimonials/media/quintin-lake.png"  />						</div>
+
+						<div class="lpc-testimonial-quote-container">
+							<div class="lpc-testimonial-quote">
+								WordPress.com works really well with Google for a great SEO ranking. I can also embed YouTube videos, Google Maps, and other content easily and without any coding ability.							</div>
+						</div>
+
+						<div class="lpc-testimonial-name">
+							Quintin Lake						</div>
+
+													<div class="lpc-testimonial-website">
+								theperimeter.uk							</div>
+											</div>
+
+				</div>
+			</div>
+		</div>
+																	<div id="lpc-testimonial.3" class="lpc-testimonial">
+			<div class="lpc-testimonial-wrapper">
+				<div class="lpc-testimonial-container">
+
+					<div class="lpc-testimonial-block">
+						<div class="lpc-testimonial-image">
+							<img id="lpc-image.3" class="lpc-image" src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/testimonials/media/ann-morgan.png" alt="" title="Ann Morgan" loading="lazy" />						</div>
+
+						<div class="lpc-testimonial-quote-container">
+							<div class="lpc-testimonial-quote">
+								It’s been a great privilege and a life-changing experience. I’m grateful to WordPress.com for providing an affordable and user-friendly platform for individuals to launch projects and be heard in this way.							</div>
+						</div>
+
+						<div class="lpc-testimonial-name">
+							Ann Morgan						</div>
+
+													<div class="lpc-testimonial-website">
+								ayearofreadingtheworld.com							</div>
+											</div>
+
+				</div>
+			</div>
+		</div>
+													</div>
+
+				</div>
+			</div>
+		</div>
+				<section id="lpc-pitch-right.2" class="lpc-pitch lpc-pitch-right lpc-closing-pitch-right">
+			<div class="lpc-pitch-wrapper">
+				<div class="lpc-pitch-container">
+
+					
+											<div class="lpc-pitch-block-1">
+							
+															<h3 class="lpc-pitch-title">
+																			<span>You can. You will.</span>
+																			<span>We’ll help.</span>
+																	</h3>
+							
+															<div class="lpc-pitch-paragraphs">
+											<div id="lpc-paragraphs.9" class="lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+
+											<p>Invent the world’s greatest cat food, save a rainforest, start a needlepoint club. Whatever it is, it’s going to need a website — that’s where we come in.</p>
+					
+				</div>
+			</div>
+		</div>
+										</div>
+							
+															<div class="lpc-pitch-cta">
+														<a id="lpc-button.11" class="lpc-button" href="#" data-regily-trigger="click">Start your website</a>
+												</div>
+													</div>
+					
+											<div class="lpc-pitch-block-2">
+
+							
+															<div class="lpc-pitch-shape">
+											<div id="lpc-shape.7" class="lpc-shape">
+			<div class="lpc-shape-wrapper">
+				<div class="lpc-shape-container">
+
+					<div class="lpc-shape-ratio"></div>
+					<div class="lpc-shape-fill"></div>
+
+				</div>
+			</div>
+		</div>
+										</div>
+							
+							
+						</div>
+					
+				</div>
+			</div>
+		</section>
+				<section id="lpc-footer-links" class="lpc-footer-links">
+			<h3 hidden>Bottom Navigation Links</h3>
+
+			<div class="lpc-footer-links-wrapper">
+				<div class="lpc-footer-links-container">
+
+					<nav>
+						<h6>Other WordPress solutions</h6>
+						<ul>
+							<li><a href="#">Jetpack plugin</a></li>
+							<li><a href="#">WooCommerce</a></li>
+							<li><a href="#">Pressable (managed WordPress)</a></li>
+							<li><a href="#">VIP (enterprise WordPress)</a></li>
+							<li><a href="#">Developers</a></li>
+						</ul>
+					</nav>
+					<nav>
+						<h6>Explore</h6>
+						<ul>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Discover</a></li>
+							<li><a href="#">Go: Growth Content</a></li>
+							<li><a href="#">Desktop Apps</a></li>
+							<li><a href="#">Mobile Apps</a></li>
+						</ul>
+					</nav>
+					<nav>
+						<h6>Community</h6>
+						<ul>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Forums</a></li>
+							<li><a href="#" title="Community-organized events that focus on everything WordPress">WordCamps</a></li>
+							<li><a href="#" title="Self-hosted, non-profit version">WordPress.org</a></li>
+						</ul>
+					</nav>
+					<nav>
+						<h6>Company</h6>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Terms of Service</a></li>
+							<li><a href="#">Matt Mullenweg</a></li>
+							<li><a href="#">Partner With Us</a></li>
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+		</section>
+				<section id="lpc-footer-nav" class="lpc-footer-nav">
+			<h3 hidden>Bottom Navigation Menu</h3>
+
+			<div class="lpc-footer-nav-wrapper">
+				<div class="lpc-footer-nav-container">
+
+					<footer class="lpc-footer-nav-footer">
+						<nav class="lpc-footer-nav-tag">
+							<ul class="lpc-footer-nav-menu">
+								<li><a href="#" target="_blank" title="Themes">Themes</a></li>
+								<li><a href="#" target="_blank" title="Features">Features</a></li>
+								<li><a href="#" target="_blank" title="Blog">Blog</a></li>
+								<li><a href="#" target="_blank" title="Stats">Stats</a></li>
+								<li><a href="#" target="_blank" title="VIP">VIP</a></li>
+								<li><a href="#" target="_blank" title="Terms of Service">Terms of Service</a></li>
+								<li><a href="#" target="_blank" title="Privacy Policy">Privacy Policy</a></li>
+
+								<li class="lpc-footer-nav-i18n-sidebar-toggle language-toggle">
+									<a href="#" title="Change Language">
+										Language:
+										<span class="lpc-footer-nav-i18n-sidebar-toggle-locale language-toggle-locale">
+											EN										</span>
+									</a>
+								</li>
+							</ul>
+							<p class="lpc-footer-nav-credits">an <a class="lpc-footer-nav-logo" href="#">Automattic</a> mambo</p>
+						</nav>
+					</footer>
+
+				</div>
+			</div>
+		</section>
+							
+
+					
+				<!-- This has something to do with the hamburger unfolding-->
+		<script src="https://s1.wp.com/home.logged-out/page-jan-2019/js/bundle.js?v=1566473345"></script>
+		<script id="4f3dcfae00ad6c419d3964b451ff0f31-js" src="https://s1.wp.com/_static/??-eJydkE1OAzEMRi9EaoYCmi4QZ3Fn3NQhf7I9Grg9iQSbii7IzrL9Pj8Z9uqWko2ygV0pkcL1GYLCZhz1EPQB/tyImFfOHhLKB1mvGpNQjeSMAisZLTbO9+tsTOMJthPlcX8pdS37eECivI27C3tPcp9v2+Uc2ofdhc3VEr8uHOMh8b+EK/o+qi5gdk+P06nncl7p8zYF58XVuHnO2tpLSU4xUtPF1Jmb1n2H34ygjkSKKMTif8pGvae36eV1nqZ5Pp7CNx9o9uk="></script>
+			
+</div>
+			</body>
+</html>
