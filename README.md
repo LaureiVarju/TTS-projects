@@ -12,7 +12,7 @@ Angular/Typescript: 3 days
 Java Concepts: 10 days  
 Unit Testing and TDD: 1 day
 SQL: 1 day  
-Spring & Hibernate: 4 days
+Spring & Hibernate: 4 days  
 Restful JSON/HTTP Web APIS: not yet discussed  
 
 ### Outside of class, the majority of my time investment is towards OOP concepts and Java exercises.
