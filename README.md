@@ -45,11 +45,10 @@ The majority of this week has been spent on updating Github pages and refining a
 [Weeks 6 and 7](https://github.com/LaureiVarju/TTS-projects/tree/master/week_7_projects)   
 Continued work on Java concepts. Reviewed Control Flow, Lambdas and Streams, Linked Lists, Array Lists and Hashmaps. Created multiple versions of a dice game simulating craps. Some versions used else/if statements and do-while loops, others used enums and collections to check for win/lose/point conditions.
 
-[Weeks 8 and 9]](https://github.com/LaureiVarju/TTS-projects/tree/master/week_8_and_9_projects)
+[Weeks 8 and 9](https://github.com/LaureiVarju/TTS-projects/tree/master/week_8_and_9_projects)
 Java assessment (Binary Trees, Big O Notation, and previous weeks topics).
 Spring, Hibernate and Spring Boot introductions, Design Patterns (Singleton, Factory Method, etc).
 SQL and relational databases, some RESTful API lectures, and work on a front-end project trying to match the splash page of a major enterprise website.
 
-[Front End Project](https://github.com/LaureiVarju/TTS-projects/tree/master/week_8_and_9_projects/wordpress_splash_page)
+[Front End Project with Live Link in README](https://github.com/LaureiVarju/Front_End_Assignment)
 An attempt to recreate the front splash page of Wordpress.com to spec. visually.
-
