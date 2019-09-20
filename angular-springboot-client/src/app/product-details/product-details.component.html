@@ -1,0 +1,28 @@
+<div *ngIf="product">
+  <div><label>Name: </label> {{ product.name }}</div>
+  <div><label>Catgeory: </label> {{ product.category }}</div>
+  <div><label>Full Price: </label> {{ product.fullprice }}</div>
+  <div><label>Sale Price: </label> {{ product.saleprice }}</div>
+  <div><label>Availability: </label> {{ product.availability }}</div>
+  <div><label>Supplier: </label> {{ product.supplier }}</div>
+
+  <span
+    class="button is-small btn-primary"
+    *ngIf="employee.active"
+    (click)="updateActive(false)"
+    >Inactive</span
+  >
+
+  <span
+    class="button is-small btn-primary"
+    *ngIf="!employee.active"
+    (click)="updateActive(true)"
+    >Active</span
+  >
+
+  <span class="button is-small btn-danger" (click)="deleteEmployee()"
+    >Delete</span
+  >
+
+  <hr />
+</div>

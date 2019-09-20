@@ -1,0 +1,70 @@
+<h3>Create Product</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        required
+        [(ngModel)]="product.name"
+        name="name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="fullprice">Full Price</label>
+      <input
+        type="number"
+        class="form-control"
+        id="fullprice"
+        required
+        [(ngModel)]="product.fullprice"
+        name="fullprice"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="saleprice">Sale Price</label>
+      <input
+        type="number"
+        class="form-control"
+        id="saleprice"
+        required
+        [(ngModel)]="product.saleprice"
+        name="saleprice"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="availaility">Availaility</label>
+      <input
+        type="boolean"
+        class="form-control"
+        id="availaility"
+        required
+        [(ngModel)]="product.availaility"
+        name="availaility"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="supplier">Supplier</label>
+      <input
+        type="number"
+        class="form-control"
+        id="supplier"
+        required
+        [(ngModel)]="product.supplier"
+        name="supplier"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+</div>
