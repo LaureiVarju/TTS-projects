@@ -22,6 +22,12 @@ public class ProductController {
     @Autowired
     private ProductRepository productRepository;
 
+    //controller here
+    public ProductController (ProductRepository productRepository) {
+        this.productRepository = productRepository;
+    }
+
+
     @GetMapping("/products")
     public List<Product> getAllProducts() {
         return productRepository.findAll();
@@ -41,11 +47,10 @@ public class ProductController {
     }
 
     @PutMapping("/products/{id}")
-    public ResponseEntity<Product> updateProduct(@PathVariable(value = "id") Long productId,
+    public Product updateProduct(@PathVariable(value = "id") Long productId,
                                                  @Valid @RequestBody Product productDetails) throws ResourceNotFoundException {
         Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new ResourceNotFoundException("Product not found for this id :: " + productId));
-
 
 
         // add all of the columns here, there should be 6
@@ -56,7 +61,7 @@ public class ProductController {
         product.setCategoryId(productDetails.getCategoryId()); //category
         product.setName(productDetails.getName()); // name
         final Product updatedProduct = productRepository.save(product);
-        return ResponseEntity.ok(updatedProduct);
+        return updatedProduct;
     }
 
     @DeleteMapping("/products/{id}")

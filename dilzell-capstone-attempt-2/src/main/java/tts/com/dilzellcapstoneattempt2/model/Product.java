@@ -20,13 +20,33 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "products")
 public class Product {
+//column 1
+    @Id
 
-    private int id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+
+    private long id;
+
+    //column 2
+    @Column(name = "name", nullable = false)
+
     private String name;
+
+    //column 3
+    @Column(name = "category", nullable = false)
     private int category;
+    //column 4
+    @Column(name = "full_price", nullable = false, precision = 2)
     private double fullPrice;
-    private double salePrice;
+
+    //column 5
+    @Column(name = "sale_price", nullable = false, precision = 2)
+        private double salePrice;
+    //column 6
+    @Column(name = "availability", nullable = false)
     private boolean availability;
+    //column 7
+    @Column(name = "supplier", nullable = false)
     private int supplier;
 
     public Product() {
@@ -42,8 +62,8 @@ public class Product {
         this.supplier = supplier;
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+   // @Id
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     public long getId() {
         return id;
     }
@@ -51,7 +71,7 @@ public class Product {
         this.id = id;
     }
 
-    @Column(name = "name", nullable = false)
+   // @Column(name = "name", nullable = false)
     public String getName() {
         return name;
     }
@@ -59,7 +79,7 @@ public class Product {
         this.name = name;
     }
 
-    @Column(name = "category", nullable = false)
+   // @Column(name = "category", nullable = false)
     public int getCategoryId() {
         return category;
     }
@@ -67,7 +87,7 @@ public class Product {
         this.category = category;
     }
 
-    @Column(name = "full_price", nullable = false)
+   // @Column(name = "full_price", nullable = false, precision = 2)
     public double getFullPrice() {
         return fullPrice;
     }
@@ -75,7 +95,7 @@ public class Product {
         this.fullPrice = fullPrice;
     }
 
-    @Column(name = "sale_price", nullable = false)
+   // @Column(name = "sale_price", nullable = false)
     public double getSalePrice() {
         return salePrice;
     }
@@ -83,7 +103,7 @@ public class Product {
         this.salePrice = salePrice;
     }
 
-    @Column(name = "availability", nullable = false)
+    //@Column(name = "availability", nullable = false)
     public boolean getAvailability() {
         return availability;
     }
@@ -91,7 +111,7 @@ public class Product {
         this.availability = availability;
     }
 
-    @Column(name = "supplier", nullable = false)
+   // @Column(name = "supplier", nullable = false)
     public int getSupplierId() {
         return supplier;
     }
