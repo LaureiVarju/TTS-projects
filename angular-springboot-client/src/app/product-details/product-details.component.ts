@@ -1,3 +1,4 @@
+import { Observable } from "rxjs";
 import { Product } from "./../products";
 import { Component, OnInit, Input } from "@angular/core";
 import { ProductService } from "../product.service";

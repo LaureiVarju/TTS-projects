@@ -12,7 +12,7 @@ public class Category {
     private long id;
 
     //column 2
-    @Column(name = "name", nullable = false)
+    @Column(name = "name", nullable = true)
     private String name;
 
 

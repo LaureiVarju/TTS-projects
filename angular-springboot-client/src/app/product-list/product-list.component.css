@@ -1,6 +1,9 @@
 .main {
   padding: 20px;
 }
+#grad {
+  background-image: linear-gradient(to right, #cbddff, #ffffff, #cbddff);
+}
 
 @media (min-width: 768px) {
   .main {

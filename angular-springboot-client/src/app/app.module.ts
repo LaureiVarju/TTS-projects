@@ -8,8 +8,10 @@ import { ProductDetailsComponent } from "./product-details/product-details.compo
 import { ProductListComponent } from "./product-list/product-list.component";
 import { HttpClientModule } from "@angular/common/http";
 import { AngularFontAwesomeModule } from "angular-font-awesome";
-import { SupplierListComponent } from './supplier-list/supplier-list.component';
-import { CategoryListComponent } from './category-list/category-list.component';
+import { SupplierListComponent } from "./supplier-list/supplier-list.component";
+import { CategoryListComponent } from "./category-list/category-list.component";
+import { UpdateProductComponent } from "./update-product/update-product.component";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,8 @@ import { CategoryListComponent } from './category-list/category-list.component';
     ProductDetailsComponent,
     ProductListComponent,
     SupplierListComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    UpdateProductComponent
   ],
   imports: [
     BrowserModule,

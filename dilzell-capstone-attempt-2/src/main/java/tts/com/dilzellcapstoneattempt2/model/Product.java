@@ -1,13 +1,10 @@
 package tts.com.dilzellcapstoneattempt2.model;
+import org.hibernate.annotations.Formula;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.math.BigDecimal;
 
 //- id: unique identifier
 //- name
@@ -23,7 +20,7 @@ public class Product {
 //column 1
     @Id
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private long id;
 
@@ -33,8 +30,9 @@ public class Product {
     private String name;
 
     //column 3
-    @Column(name = "category", nullable = false)
-    private int category;
+    @ManyToOne
+    @JoinColumn(name = "category", nullable = true)
+    private Category category;
     //column 4
     @Column(name = "full_price", nullable = false, precision = 2)
     private double fullPrice;
@@ -42,18 +40,23 @@ public class Product {
     //column 5
     @Column(name = "sale_price", nullable = false, precision = 2)
         private double salePrice;
+
+   @Formula(value = "((full_price - sale_price) / full_price)")
+    private BigDecimal discountPercentage;
+
     //column 6
     @Column(name = "availability", nullable = false)
     private boolean availability;
     //column 7
-    @Column(name = "supplier", nullable = false)
-    private int supplier;
+    @ManyToOne
+    @JoinColumn(name = "supplier", nullable = true)
+    private Supplier supplier;
 
     public Product() {
 
     }
 
-    public Product(String name, int category, double fullPrice, double salePrice, boolean availability, int supplier) {
+    public Product(String name, Category category, double fullPrice, double salePrice, boolean availability, Supplier supplier) {
         this.name = name;
         this.category = category;
         this.fullPrice = fullPrice;
@@ -80,10 +83,10 @@ public class Product {
     }
 
    // @Column(name = "category", nullable = false)
-    public int getCategoryId() {
+    public Category getCategoryId() {
         return category;
     }
-    public void setCategoryId(int category) {
+    public void setCategoryId(Category category) {
         this.category = category;
     }
 
@@ -103,6 +106,12 @@ public class Product {
         this.salePrice = salePrice;
     }
 
+    // @Column(name = "sale_price", nullable = false)
+    public BigDecimal getDiscountPercentage() {
+        return discountPercentage;
+    }
+
+
     //@Column(name = "availability", nullable = false)
     public boolean getAvailability() {
         return availability;
@@ -112,17 +121,17 @@ public class Product {
     }
 
    // @Column(name = "supplier", nullable = false)
-    public int getSupplierId() {
+    public Supplier getSupplierId() {
         return supplier;
     }
-    public void setSupplierId(int supplier) {
+    public void setSupplierId(Supplier supplier) {
         this.supplier = supplier;
     }
 
     @Override
     public String toString() {
         return "Employee [id=" + id + ", name=" + name + ", category=" + category + ", full_price=" + fullPrice +
-                ", sale_price=" + salePrice + ", availability=" + availability + ", supplier=" + supplier
+                ", sale_price=" + salePrice + ", discountPercentage=" + discountPercentage + ", availability=" + availability + ", supplier=" + supplier
                 + "]";
     }
 

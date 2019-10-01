@@ -53,13 +53,14 @@ public class ProductController {
                 .orElseThrow(() -> new ResourceNotFoundException("Product not found for this id :: " + productId));
 
 
-        // add all of the columns here, there should be 6
+        // add all of the columns here, there should be 7 now
         product.setSupplierId(productDetails.getSupplierId());
         product.setAvailability(productDetails.getAvailability());
         product.setSalePrice(productDetails.getSalePrice());
         product.setFullPrice(productDetails.getFullPrice()); //full price
         product.setCategoryId(productDetails.getCategoryId()); //category
         product.setName(productDetails.getName()); // name
+
         final Product updatedProduct = productRepository.save(product);
         return updatedProduct;
     }

@@ -4,7 +4,12 @@ import org.springframework.stereotype.Repository;
 
 import tts.com.dilzellcapstoneattempt2.model.Product;
 
+import java.util.List;
+
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long>{
+    List<Product> findByOrderByCategory();
+
 
 }
+
