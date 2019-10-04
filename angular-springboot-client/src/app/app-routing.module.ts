@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: "categories", component: CategoryListComponent },
   { path: "add", component: CreateProductComponent },
   { path: "details", component: ProductDetailsComponent },
-  {path: "update", component: UpdateProductComponent}
+  { path: "update", component: UpdateProductComponent }
 ];
 
 @NgModule({
@@ -22,7 +22,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
-
-
-/* You mean the world to me too, Eric. You're incredibly important to me (and to others). You matter to a lot of people
-You're stunning, I kept thinking it at the arcade and when we were cuddling on the couch on Saturday and Sunday. */ 

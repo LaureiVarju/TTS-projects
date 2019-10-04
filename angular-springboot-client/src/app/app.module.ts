@@ -11,6 +11,11 @@ import { AngularFontAwesomeModule } from "angular-font-awesome";
 import { SupplierListComponent } from "./supplier-list/supplier-list.component";
 import { CategoryListComponent } from "./category-list/category-list.component";
 import { UpdateProductComponent } from "./update-product/update-product.component";
+import { MatSliderModule } from "@angular/material/slider";
+import { MatTableModule } from "@angular/material";
+import { MatSortModule } from "@angular/material";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatPaginatorModule } from "@angular/material/paginator";
 
 @NgModule({
   declarations: [
@@ -24,10 +29,15 @@ import { UpdateProductComponent } from "./update-product/update-product.componen
   ],
   imports: [
     BrowserModule,
+    MatSortModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    MatSliderModule,
+    MatPaginatorModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

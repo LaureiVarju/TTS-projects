@@ -1,7 +1,10 @@
 import { Observable } from "rxjs";
 import { ProductService } from "./../product.service";
 import { Product } from "./../products";
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild } from "@angular/core";
+import { MatTableDataSource } from "@angular/material/table";
+import { MatSort } from "@angular/material/sort";
+import { MatPaginator, PageEvent } from "@angular/material/paginator";
 
 @Component({
   selector: "app-product-list",
@@ -10,11 +13,38 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ProductListComponent implements OnInit {
   products: Observable<Product[]>;
+  displayedColumns: string[] = [
+    "name",
+    "fullPrice",
+    "salePrice",
+    "discountPercentage",
+    "availability",
+    "categoryId",
+    "supplierId",
+    "action1",
+    "action2"
+  ];
+  dataSource = new MatTableDataSource();
+
+  length = 100;
+  pageSize = 10;
+  pageSizeOptions: number[] = [5, 10, 25, 100];
+
+  // MatPaginator Output
+  pageEvent: PageEvent;
+
+  setPageSizeOptions(setPageSizeOptionsInput: string) {
+    this.pageSizeOptions = setPageSizeOptionsInput.split(",").map(str => +str);
+  }
 
   constructor(private productService: ProductService) {}
 
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
+  @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
+
   ngOnInit() {
     console.log("inside the oninit func");
+
     this.reloadData();
   }
 
@@ -22,7 +52,10 @@ export class ProductListComponent implements OnInit {
   reloadData() {
     console.log("inside of the reload data func");
     this.productService.getProductsList().subscribe(value => {
-      this.products = value;
+      this.products = value.content;
+      this.dataSource = value.content;
+      this.dataSource.sort = this.sort;
+      console.log("This is below this.products" + this.products);
     });
   }
 
@@ -46,6 +79,18 @@ export class ProductListComponent implements OnInit {
       error => console.log(error)
     );
 
+    /*
+
+export class TableSortingExample implements OnInit {
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  dataSource = new MatTableDataSource(ELEMENT_DATA);
+
+  @ViewChild(MatSort, {static: true}) sort: MatSort;
+
+
+
+    */
+
     //   selectProduct(id: number) {
     //     console.log("Selected item Id: ", product.id); // You get the Id of the selected item here
     // }
@@ -65,7 +110,6 @@ export class ProductListComponent implements OnInit {
 updateProduct(id: number, value: any): Observable<Object> {
       return this.http.put(`${this.baseUrl}/${id}`, value);
     }
-
 
     onSelect(id: number) {
       this.productService.onSelect(id).subscribe(

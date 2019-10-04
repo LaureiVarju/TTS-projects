@@ -6,6 +6,11 @@ import java.util.Map;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.querydsl.QPageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,9 +34,37 @@ public class ProductController {
 
 
     @GetMapping("/products")
-    public List<Product> getAllProducts() {
-        return productRepository.findAll();
+        public Page<Product> getAllProducts() {
+        Pageable page=PageRequest.of(0, 50, Sort.Direction.fromString("ASC"), "name");
+        return productRepository.findAll(page);
     }
+
+    @GetMapping("/products/pricedesc")
+    public Page<Product> getAllbyPriceProducts() {
+        Pageable page=PageRequest.of(0, 50, Sort.Direction.fromString("DESC"), "fullPrice");
+        return productRepository.findAll(page);
+    }
+
+    @GetMapping("/products/saledesc")
+    public Page<Product> getAllbySaleProducts() {
+        Pageable page=PageRequest.of(0, 50, Sort.Direction.fromString("DESC"), "salePrice");
+        return productRepository.findAll(page);
+    }
+
+    @GetMapping("/products/discount")
+    public Page<Product> getAllbyDiscountProducts() {
+        Pageable page=PageRequest.of(0, 50, Sort.Direction.fromString("DESC"), "discountPercentage");
+        return productRepository.findAll(page);
+    }
+
+
+
+    @GetMapping("/products/bypriceavail")
+    public Page<Product> getAllbyPriceAndAvailableProducts() {
+        Pageable page=PageRequest.of(0, 50, Sort.by("availability").and(Sort.by("fullPrice").descending()));
+        return productRepository.findAll(page);
+    }
+
 
     @GetMapping("/products/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable(value = "id") Long productId)
@@ -42,7 +75,7 @@ public class ProductController {
     }
 
     @PostMapping("/products")
-    public Product createProduct(@Valid @RequestBody Product product) {
+    public Product createProduct(@Valid @RequestBody Product product ) {
         return productRepository.save(product);
     }
 
@@ -76,6 +109,13 @@ public class ProductController {
         response.put("deleted", Boolean.TRUE);
         return response;
     }
+
+
+//@GetMapping("/products/")
+//    public Page<Product> findAllByPrice(){
+//        Pageable page=PageRequest.of(0, 50, Sort.Direction.fromString("ASC"), "fullPrice");
+//        productRepository.findAllByFullPrice(page);
+//    }
 
 
 }

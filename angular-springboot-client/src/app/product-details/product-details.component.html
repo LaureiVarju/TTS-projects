@@ -7,17 +7,17 @@
   <div><label>Sale Price: </label> {{ product.saleprice }}</div>
   <div>
     <label>Discount Percentage: </label>
-    {{ product.discountPercentage | percent: "1.2-1" }}
+    {{ product.discountPercentage | percent }}
   </div>
   <div><label>Availability: </label> {{ product.availability }}</div>
   <div><label>Supplier: </label> {{ product.supplier.name }}</div>
 
-  <span
+  <!-- <span
     class="button is-small btn-primary"
     *ngIf="productt.active"
     (click)="updateProduct()"
     >Inactive</span
-  >
+  > -->
 
   <!-- <span
     class="button is-small btn-primary"
